@@ -1,0 +1,55 @@
+version: '3.4'
+
+services:
+    dsrflowershop_sqlserver:
+        environment:
+            - ACCEPT_EULA=Y
+            - SA_PASSWORD=Passw0rd
+            - MSSQL_PID=Express
+        ports:
+            - "21433:1433"
+        networks:
+            - shared-dsrflowershop-net
+        volumes:            
+            - sqlserver-data:/var/opt/mssql
+
+    dsrflowershop_redis:
+        ports:
+            - "26379:6379"
+        networks:
+            - shared-dsrflowershop-net
+
+    dsrflowershop_rabbitmq:
+        ports:
+            - "25672:5672"
+            - "25673:5673"
+            - "35672:15672" 
+        networks:
+            - shared-dsrflowershop-net
+        volumes:            
+            - rabbitmq-data:/var/lib/rabbitmq/
+
+    dsrflowershop_api:
+        ports:
+            - "20000:80"
+        networks:
+            - shared-dsrflowershop-net
+        env_file:
+            - env.api
+
+    dsrflowershop_identity:
+        ports:
+            - "20001:80"
+        networks:
+            - shared-dsrflowershop-net
+        env_file:
+            - env.identity
+
+volumes:
+    sqlserver-data:
+    rabbitmq-data:
+
+networks:
+    shared-dsrflowershop-net:
+        name: DSRFlowerShop
+        driver: bridge

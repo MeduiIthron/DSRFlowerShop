@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
+    <DockerfileContext>..\..</DockerfileContext>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.14.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="5.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.2" />
+    <PackageReference Include="IdentityServer4.AccessTokenValidation" Version="3.0.1" />
+    <PackageReference Include="Serilog.AspNetCore" Version="6.0.0-dev-00265" />
+    <PackageReference Include="Serilog.Enrichers.CorrelationId" Version="3.0.1" />
+    <PackageReference Include="Serilog.Expressions" Version="3.2.1" />
+    <PackageReference Include="FluentValidation" Version="10.3.6" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="10.3.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Data\DSRFlowerShop.Db.Context\DSRFlowerShop.Db.Context.csproj" />
+    <ProjectReference Include="..\..\..\Data\DSRFlowerShop.Db.Entities\DSRFlowerShop.Db.Entities.csproj" />
+    <ProjectReference Include="..\..\..\Services\DSRFlowerShop.BouquetsService\DSRFlowerShop.BouquetsService.csproj" />
+    <ProjectReference Include="..\..\..\Services\DSRFlowerShop.FlowersService\DSRFlowerShop.FlowerService.csproj" />
+    <ProjectReference Include="..\..\..\Services\DSRFlowerShop.Logger\DSRFlowerShop.Logger.csproj" />
+    <ProjectReference Include="..\..\..\Services\DSRFlowerShop.Settings\DSRFlowerShop.Settings.csproj" />
+    <ProjectReference Include="..\..\..\Services\DSRFlowerShop.DealersService\DSRFlowerShop.DealersService.csproj" />
+    <ProjectReference Include="..\..\..\Shared\DSRFlowerShop.Common\DSRFlowerShop.Common.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="api.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

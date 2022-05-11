@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>..\..\..</DockerfileContext>
+    <DockerComposeProjectPath>..\..\..\docker-compose.dcproj</DockerComposeProjectPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.14.0" />
+    <PackageReference Include="Duende.IdentityServer" Version="6.0.4" />
+    <PackageReference Include="Duende.IdentityServer.AspNetIdentity" Version="6.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Data\DSRFlowerShop.Db.Context\DSRFlowerShop.Db.Context.csproj" />
+    <ProjectReference Include="..\..\..\Data\DSRFlowerShop.Db.Entities\DSRFlowerShop.Db.Entities.csproj" />
+    <ProjectReference Include="..\..\..\Services\DSRFlowerShop.Settings\DSRFlowerShop.Settings.csproj" />
+    <ProjectReference Include="..\..\..\Shared\DSRFlowerShop.Common\DSRFlowerShop.Common.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="keys\" />
+  </ItemGroup>
+</Project>
