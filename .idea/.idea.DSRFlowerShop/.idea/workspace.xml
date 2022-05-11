@@ -6,15 +6,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4a55f86-3480-45ce-8117-af35feae258d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Services/DSRFlowerShop.FlowersService/Models/BouquetFlowerModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/System/Api/DSRFlowerShop.API/Controllers/Bouquets/Models/AddBouquetFlowerRequest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/System/Identity/DSRFlowerShop.Identity/keys/is-signing-key-12AA52E23E7964C4B82E4BECEDDE93F6.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DSRFlowerShop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DSRFlowerShop/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/DSRFlowerShop.BouquetsService/BouquetService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/DSRFlowerShop.BouquetsService/BouquetService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/DSRFlowerShop.BouquetsService/DSRFlowerShop.BouquetsService.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Services/DSRFlowerShop.BouquetsService/DSRFlowerShop.BouquetsService.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/DSRFlowerShop.BouquetsService/IBouquetService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/DSRFlowerShop.BouquetsService/IBouquetService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/DSRFlowerShop.BouquetsService/Models/BouquetModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/DSRFlowerShop.BouquetsService/Models/BouquetModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/System/Api/DSRFlowerShop.API/Controllers/Bouquets/BouquetsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/System/Api/DSRFlowerShop.API/Controllers/Bouquets/BouquetsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/System/Api/DSRFlowerShop.API/Controllers/Bouquets/Models/BouquetResponse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/System/Api/DSRFlowerShop.API/Controllers/Bouquets/Models/BouquetResponse.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/DSRFlowerShop/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/DSRFlowerShop/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/DSRFlowerShop.DealersService/Models/AuthDealerModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/DSRFlowerShop.DealersService/Models/AuthDealerModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/DSRFlowerShop.DealersService/Models/DealerModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/DSRFlowerShop.DealersService/Models/DealerModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/DSRFlowerShop.DealersService/Models/RegisterDealerModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/DSRFlowerShop.DealersService/Models/RegisterDealerModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/System/Api/DSRFlowerShop.API/Bootstrapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/System/Api/DSRFlowerShop.API/Bootstrapper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/System/Api/DSRFlowerShop.API/Controllers/Bouquets/Models/AddBouquetFlowerRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/System/Api/DSRFlowerShop.API/Controllers/Bouquets/Models/AddBouquetFlowerRequest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/System/Api/DSRFlowerShop.API/Controllers/Dealers/DealersController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/System/Api/DSRFlowerShop.API/Controllers/Dealers/DealersController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/System/Api/DSRFlowerShop.API/Controllers/Dealers/Models/CreateDealerRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/System/Api/DSRFlowerShop.API/Controllers/Dealers/Models/CreateDealerRequest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/System/Api/DSRFlowerShop.API/Controllers/Dealers/Models/UsingDealerRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/System/Api/DSRFlowerShop.API/Controllers/Dealers/Models/UsingDealerRequest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/System/Api/DSRFlowerShop.API/logs/log-20220511.txt" beforeDir="false" afterPath="$PROJECT_DIR$/System/Api/DSRFlowerShop.API/logs/log-20220511.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +101,7 @@
       <option name="presentableId" value="Default" />
       <updated>1652283776168</updated>
       <workItem from="1652283781347" duration="380000" />
-      <workItem from="1652295655628" duration="2158000" />
+      <workItem from="1652295655628" duration="2753000" />
     </task>
     <servers />
   </component>

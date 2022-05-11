@@ -27,6 +27,6 @@ public class AuthDealerModelProfile : Profile
 {
     public AuthDealerModelProfile()
     {
-        CreateMap<Dealer, AuthDealerModel>();
+        CreateMap<AuthDealerModel, Dealer>();
     }
 }

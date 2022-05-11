@@ -1,11 +1,13 @@
 ﻿namespace DSRFlowerShop.API.Controllers.Dealers.Models;
 
+using AutoMapper;
+using DSRFlowerShop.API.Dealers.Models;
 using FluentValidation;
 
 public class CreateDealerRequest
 {
     public string Login { get; set; }
-    public string Password {  get; set; }
+    public string Password { get; set; }
 }
 
 public class CreateDealerRequestValidator : AbstractValidator<CreateDealerRequest>
@@ -17,5 +19,13 @@ public class CreateDealerRequestValidator : AbstractValidator<CreateDealerReques
 
         RuleFor(x => x.Password)
             .NotEmpty().WithMessage("Password is required.");
+    }
+}
+
+public class CreateDealerRequestProfile : Profile
+{
+    public CreateDealerRequestProfile()
+    {
+        CreateMap<CreateDealerRequest, RegisterDealerModel>();
     }
 }

@@ -14,9 +14,6 @@ public class DealerModel
 public class DealerModelValidator: AbstractValidator<DealerModel> {
     
     public DealerModelValidator() {
-        RuleFor(x => x.Id)
-            .NotEmpty().WithMessage("DealerID is required.");
-
         RuleFor(x => x.Login)
             .NotEmpty().WithMessage("Login is required.");
 

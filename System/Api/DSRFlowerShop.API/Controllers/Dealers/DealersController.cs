@@ -7,6 +7,7 @@ using DSRFlowerShop.Common.Security;
 using DSRFlowerShop.API.Dealers.Models;
 using DSRFlowerShop.API.Controllers.Dealers.Models;
 using DSRFlowerShop.DealerService;
+using Serilog;
 
 [Route("api/v{version:apiVersion}/Dealers")]
 [ApiController]
@@ -29,6 +30,8 @@ public class DealersController: ControllerBase
     public async Task<DealerResponse> CreateDealer([FromBody] CreateDealerRequest request)
     {
         var DealerModel = mapper.Map<RegisterDealerModel>(request);
+
+        Log.Information("->>");
         var Dealer = await DealerService.CreateDealer(DealerModel);
         var response = mapper.Map<DealerResponse>(Dealer);
         return response;

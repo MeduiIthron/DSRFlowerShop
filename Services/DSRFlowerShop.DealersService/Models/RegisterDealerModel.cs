@@ -25,6 +25,6 @@ public class RegisterDealerModelProfile : Profile
 {
     public RegisterDealerModelProfile()
     {
-        CreateMap<Dealer, AuthDealerModel>();
+        CreateMap<RegisterDealerModel, Dealer>();
     }
 }
