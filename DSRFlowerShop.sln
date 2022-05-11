@@ -44,11 +44,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DSRFlowerShop.Identity", "S
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DSRFlowerShop.API", "System\Api\DSRFlowerShop.API\DSRFlowerShop.API.csproj", "{EFDBB704-2690-4162-BBE1-3C17C8CC1E3F}"
 EndProject
-Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{E1B2FE08-1D00-4963-A41E-7EA4A3A280B4}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DSRFlowerShop.DealersService", "Services\DSRFlowerShop.DealersService\DSRFlowerShop.DealersService.csproj", "{B5775D13-4BCA-44EC-859D-60DD4D2D2923}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSRFlowerShop.BouquetsService", "Services\DSRFlowerShop.BouquetsService\DSRFlowerShop.BouquetsService.csproj", "{C85449BB-12D8-41FB-96F2-39DAA4CD4CB4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DSRFlowerShop.BouquetsService", "Services\DSRFlowerShop.BouquetsService\DSRFlowerShop.BouquetsService.csproj", "{C85449BB-12D8-41FB-96F2-39DAA4CD4CB4}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{A88A9615-5DE0-495D-A653-6DE392553BD7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -88,10 +88,6 @@ Global
 		{EFDBB704-2690-4162-BBE1-3C17C8CC1E3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EFDBB704-2690-4162-BBE1-3C17C8CC1E3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EFDBB704-2690-4162-BBE1-3C17C8CC1E3F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E1B2FE08-1D00-4963-A41E-7EA4A3A280B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E1B2FE08-1D00-4963-A41E-7EA4A3A280B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E1B2FE08-1D00-4963-A41E-7EA4A3A280B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E1B2FE08-1D00-4963-A41E-7EA4A3A280B4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B5775D13-4BCA-44EC-859D-60DD4D2D2923}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B5775D13-4BCA-44EC-859D-60DD4D2D2923}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B5775D13-4BCA-44EC-859D-60DD4D2D2923}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -100,6 +96,10 @@ Global
 		{C85449BB-12D8-41FB-96F2-39DAA4CD4CB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C85449BB-12D8-41FB-96F2-39DAA4CD4CB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C85449BB-12D8-41FB-96F2-39DAA4CD4CB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A88A9615-5DE0-495D-A653-6DE392553BD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A88A9615-5DE0-495D-A653-6DE392553BD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A88A9615-5DE0-495D-A653-6DE392553BD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A88A9615-5DE0-495D-A653-6DE392553BD7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

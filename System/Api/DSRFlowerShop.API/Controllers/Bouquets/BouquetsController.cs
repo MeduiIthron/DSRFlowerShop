@@ -25,7 +25,7 @@ public class BouquetsController : ControllerBase
     }
 
     [HttpGet("")]
-    [Authorize(AppScopes.BouquetsRead)]
+    [Authorize(AppScopes.FlowersRead)]
     public async Task<IEnumerable<BouquetResponse>> GetBouquets([FromRoute] int DealerID, [FromQuery] int offset = 0, [FromQuery] int limit = 10)
     {
         var Bouquets = await BouquetService.GetBouquets(DealerID, offset, limit);
@@ -35,7 +35,7 @@ public class BouquetsController : ControllerBase
     }
 
     [HttpGet("{id}")]
-    [Authorize(AppScopes.BouquetsRead)]
+    [Authorize(AppScopes.FlowersRead)]
     public async Task<BouquetResponse> GetBouquetById([FromRoute] int DealerID, [FromRoute] int id)
     {
         var Bouquet = await BouquetService.GetBouquet(DealerID, id);
@@ -45,7 +45,7 @@ public class BouquetsController : ControllerBase
     }
 
     [HttpPost("")]
-    [Authorize(AppScopes.BouquetsWrite)]
+    [Authorize(AppScopes.FlowersWrite)]
     public async Task<BouquetResponse> AddBouquet(AddBouquetRequest request)
     {
         var model = mapper.Map<AddBouquetModel>(request);
@@ -56,7 +56,7 @@ public class BouquetsController : ControllerBase
     }
 
     [HttpPut("{id}")]
-    [Authorize(AppScopes.BouquetsWrite)]
+    [Authorize(AppScopes.FlowersWrite)]
     public async Task<IActionResult> UpdateBouquet([FromRoute] int id, [FromBody] UpdateBouquetRequest request)
     {
         var model = mapper.Map<UpdateBouquetModel>(request);
@@ -66,7 +66,7 @@ public class BouquetsController : ControllerBase
     }
 
     [HttpDelete("{id}")]
-    [Authorize(AppScopes.BouquetsWrite)]
+    [Authorize(AppScopes.FlowersWrite)]
     public async Task<IActionResult> DeleteBouquet([FromRoute] int dealerID, [FromRoute] int id)
     {
         await BouquetService.DeleteBouquet(dealerID, id);

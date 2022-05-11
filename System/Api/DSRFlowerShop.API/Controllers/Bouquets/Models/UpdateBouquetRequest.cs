@@ -2,7 +2,7 @@
 
 using AutoMapper;
 using FluentValidation;
-using DSRBouquetShop.API.Bouquets.Models;
+using DSRFlowerShop.API.Bouquets.Models;
 using DSRFlowerShop.Common;
 
 public class UpdateBouquetRequest

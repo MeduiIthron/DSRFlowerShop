@@ -1,8 +1,8 @@
-﻿namespace DSRBouquetShop.API.Controllers.Bouquets.Models;
+﻿namespace DSRFlowerShop.API.Controllers.Bouquets.Models;
 
 using AutoMapper;
 using FluentValidation;
-using DSRBouquetShop.API.Bouquets.Models;
+using DSRFlowerShop.API.Bouquets.Models;
 
 public class AddBouquetRequest
 {

@@ -1,8 +1,9 @@
 ﻿namespace DSRFlowerShop.API.Controllers.Bouquets.Models;
 
 using AutoMapper;
-using DSRBouquetShop.API.Bouquets.Models;
+using DSRFlowerShop.API.Bouquets.Models;
 using DSRFlowerShop.Common;
+
 public class BouquetResponse
 {
     public int Id { get; set; }
