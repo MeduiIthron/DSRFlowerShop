@@ -1627,3 +1627,342 @@ ORDER BY [MigrationId];
 [18:23:17:885 DBG ()] Key ring with default key {7d9693d5-8711-4fba-892b-c697e69e2f5a} was loaded during application startup.
 [18:23:17:912 DBG ()] Loaded hosting startup assembly DSRFlowerShop.API
 [18:23:17:913 DBG ()] Hosting started
+[19:55:06:846 INF ()] Stating up
+[19:55:06:977 DBG ()] Initializing Razor view compiler with compiled view: '/Pages/Index.cshtml'.
+[19:55:06:980 DBG ()] Initializing Razor view compiler with compiled view: '/Pages/_ViewImports.cshtml'.
+[19:55:06:980 DBG ()] Initializing Razor view compiler with compiled view: '/Pages/_ViewStart.cshtml'.
+[19:55:06:981 DBG ()] Initializing Razor view compiler with compiled view: '/Pages/Shared/_Layout.cshtml'.
+[19:55:07:065 DBG ()] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+[19:55:07:085 WRN ()] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed.
+[19:55:07:086 INF ()] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+[19:55:07:544 DBG ()] An 'IServiceProvider' was created for internal use by Entity Framework.
+[19:55:08:109 DBG ()] The index {'BouquetsId'} was not created on entity type 'BouquetFlower (Dictionary<string, object>)' as the properties are already covered by the index {'BouquetsId', 'FlowersId'}.
+[19:55:08:110 DBG ()] The index {'CategoriesId'} was not created on entity type 'CategoryFlower (Dictionary<string, object>)' as the properties are already covered by the index {'CategoriesId', 'FlowersId'}.
+[19:55:08:110 DBG ()] The index {'UserId'} was not created on entity type 'IdentityUserRole<Guid>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+[19:55:08:111 DBG ()] The index {'UserId'} was not created on entity type 'IdentityUserToken<Guid>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+[19:55:08:204 DBG ()] The property 'BouquetFlower (Dictionary<string, object>).BouquetsId' was created in shadow state because there are no eligible CLR members with a matching name.
+[19:55:08:204 DBG ()] The property 'BouquetFlower (Dictionary<string, object>).FlowersId' was created in shadow state because there are no eligible CLR members with a matching name.
+[19:55:08:205 DBG ()] The property 'CategoryFlower (Dictionary<string, object>).CategoriesId' was created in shadow state because there are no eligible CLR members with a matching name.
+[19:55:08:205 DBG ()] The property 'CategoryFlower (Dictionary<string, object>).FlowersId' was created in shadow state because there are no eligible CLR members with a matching name.
+[19:55:08:367 INF ()] Entity Framework Core 6.0.2 initialized 'MainDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.2' with options: CommandTimeout=600 
+[19:55:08:618 DBG ()] Migrating using database 'DSRFlowerShop' on server 'dsrflowershop_sqlserver'.
+[19:55:08:624 DBG ()] Opening connection to database 'DSRFlowerShop' on server 'dsrflowershop_sqlserver'.
+[19:55:09:247 DBG ()] Opened connection to database 'DSRFlowerShop' on server 'dsrflowershop_sqlserver'.
+[19:55:09:253 DBG ()] Creating DbCommand for 'ExecuteNonQuery'.
+[19:55:09:261 DBG ()] Created DbCommand for 'ExecuteNonQuery' (4ms).
+[19:55:09:269 DBG ()] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT 1
+[19:55:09:290 INF ()] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT 1
+[19:55:09:293 DBG ()] Closing connection to database 'DSRFlowerShop' on server 'dsrflowershop_sqlserver'.
+[19:55:09:297 DBG ()] Closed connection to database 'DSRFlowerShop' on server 'dsrflowershop_sqlserver'.
+[19:55:09:302 DBG ()] Creating DbCommand for 'ExecuteScalar'.
+[19:55:09:303 DBG ()] Created DbCommand for 'ExecuteScalar' (0ms).
+[19:55:09:303 DBG ()] Opening connection to database 'DSRFlowerShop' on server 'dsrflowershop_sqlserver'.
+[19:55:09:304 DBG ()] Opened connection to database 'DSRFlowerShop' on server 'dsrflowershop_sqlserver'.
+[19:55:09:305 DBG ()] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+[19:55:09:318 INF ()] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+[19:55:09:319 DBG ()] Closing connection to database 'DSRFlowerShop' on server 'dsrflowershop_sqlserver'.
+[19:55:09:320 DBG ()] Closed connection to database 'DSRFlowerShop' on server 'dsrflowershop_sqlserver'.
+[19:55:09:321 DBG ()] Opening connection to database 'DSRFlowerShop' on server 'dsrflowershop_sqlserver'.
+[19:55:09:321 DBG ()] Opened connection to database 'DSRFlowerShop' on server 'dsrflowershop_sqlserver'.
+[19:55:09:321 DBG ()] Creating DbCommand for 'ExecuteNonQuery'.
+[19:55:09:322 DBG ()] Created DbCommand for 'ExecuteNonQuery' (0ms).
+[19:55:09:322 DBG ()] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT 1
+[19:55:09:324 INF ()] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT 1
+[19:55:09:325 DBG ()] Closing connection to database 'DSRFlowerShop' on server 'dsrflowershop_sqlserver'.
+[19:55:09:325 DBG ()] Closed connection to database 'DSRFlowerShop' on server 'dsrflowershop_sqlserver'.
+[19:55:09:397 DBG ()] DetectChanges starting for 'MainDbContext'.
+[19:55:09:400 DBG ()] DetectChanges completed for 'MainDbContext'.
+[19:55:09:429 DBG ()] Creating DbCommand for 'ExecuteNonQuery'.
+[19:55:09:430 DBG ()] Created DbCommand for 'ExecuteNonQuery' (0ms).
+[19:55:09:431 DBG ()] Opening connection to database 'DSRFlowerShop' on server 'dsrflowershop_sqlserver'.
+[19:55:09:432 DBG ()] Opened connection to database 'DSRFlowerShop' on server 'dsrflowershop_sqlserver'.
+[19:55:09:432 DBG ()] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);
+[19:55:09:445 INF ()] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);
+[19:55:09:445 DBG ()] Closing connection to database 'DSRFlowerShop' on server 'dsrflowershop_sqlserver'.
+[19:55:09:446 DBG ()] Closed connection to database 'DSRFlowerShop' on server 'dsrflowershop_sqlserver'.
+[19:55:09:447 DBG ()] Opening connection to database 'DSRFlowerShop' on server 'dsrflowershop_sqlserver'.
+[19:55:09:448 DBG ()] Opened connection to database 'DSRFlowerShop' on server 'dsrflowershop_sqlserver'.
+[19:55:09:448 DBG ()] Creating DbCommand for 'ExecuteNonQuery'.
+[19:55:09:449 DBG ()] Created DbCommand for 'ExecuteNonQuery' (0ms).
+[19:55:09:449 DBG ()] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT 1
+[19:55:09:451 INF ()] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT 1
+[19:55:09:451 DBG ()] Closing connection to database 'DSRFlowerShop' on server 'dsrflowershop_sqlserver'.
+[19:55:09:452 DBG ()] Closed connection to database 'DSRFlowerShop' on server 'dsrflowershop_sqlserver'.
+[19:55:09:452 DBG ()] Creating DbCommand for 'ExecuteScalar'.
+[19:55:09:453 DBG ()] Created DbCommand for 'ExecuteScalar' (0ms).
+[19:55:09:453 DBG ()] Opening connection to database 'DSRFlowerShop' on server 'dsrflowershop_sqlserver'.
+[19:55:09:454 DBG ()] Opened connection to database 'DSRFlowerShop' on server 'dsrflowershop_sqlserver'.
+[19:55:09:454 DBG ()] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+[19:55:09:457 INF ()] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+[19:55:09:457 DBG ()] Closing connection to database 'DSRFlowerShop' on server 'dsrflowershop_sqlserver'.
+[19:55:09:458 DBG ()] Closed connection to database 'DSRFlowerShop' on server 'dsrflowershop_sqlserver'.
+[19:55:09:460 DBG ()] Creating DbCommand for 'ExecuteReader'.
+[19:55:09:460 DBG ()] Created DbCommand for 'ExecuteReader' (0ms).
+[19:55:09:461 DBG ()] Opening connection to database 'DSRFlowerShop' on server 'dsrflowershop_sqlserver'.
+[19:55:09:461 DBG ()] Opened connection to database 'DSRFlowerShop' on server 'dsrflowershop_sqlserver'.
+[19:55:09:462 DBG ()] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+[19:55:09:465 INF ()] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+[19:55:09:467 DBG ()] A data reader was disposed.
+[19:55:09:468 DBG ()] Closing connection to database 'DSRFlowerShop' on server 'dsrflowershop_sqlserver'.
+[19:55:09:468 DBG ()] Closed connection to database 'DSRFlowerShop' on server 'dsrflowershop_sqlserver'.
+[19:55:09:476 DBG ()] No migrations were found in assembly 'DSRFlowerShop.Db.Context'.
+[19:55:09:480 INF ()] No migrations were applied. The database is already up to date.
+[19:55:09:481 DBG ()] 'MainDbContext' disposed.
+[19:55:09:486 DBG ()] Hosting starting
+[19:55:09:496 DBG ()] Repository contains no viable default key. Caller should generate a key with immediate activation.
+[19:55:09:496 DBG ()] Policy resolution states that a new key should be added to the key ring.
+[19:55:09:501 INF ()] Creating key {12740f0d-c8ec-493b-b880-bd2b7c642611} with creation date 2022-05-11 19:55:09Z, activation date 2022-05-11 19:55:09Z, and expiration date 2022-08-09 19:55:09Z.
+[19:55:09:507 DBG ()] Descriptor deserializer type for key {12740f0d-c8ec-493b-b880-bd2b7c642611} is 'Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'.
+[19:55:09:512 DBG ()] No key escrow sink found. Not writing key {12740f0d-c8ec-493b-b880-bd2b7c642611} to escrow.
+[19:55:09:513 WRN ()] No XML encryptor configured. Key {12740f0d-c8ec-493b-b880-bd2b7c642611} may be persisted to storage in unencrypted form.
+[19:55:09:517 INF ()] Writing data to file '/root/.aspnet/DataProtection-Keys/key-12740f0d-c8ec-493b-b880-bd2b7c642611.xml'.
+[19:55:09:518 DBG ()] Key cache expiration token triggered by 'CreateNewKey' operation.
+[19:55:09:521 DBG ()] Reading data from file '/root/.aspnet/DataProtection-Keys/key-12740f0d-c8ec-493b-b880-bd2b7c642611.xml'.
+[19:55:09:523 DBG ()] Found key {12740f0d-c8ec-493b-b880-bd2b7c642611}.
+[19:55:09:528 DBG ()] Considering key {12740f0d-c8ec-493b-b880-bd2b7c642611} with expiration date 2022-08-09 19:55:09Z as default key.
+[19:55:09:530 DBG ()] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+[19:55:09:531 DBG ()] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+[19:55:09:532 DBG ()] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+[19:55:09:537 DBG ()] Using key {12740f0d-c8ec-493b-b880-bd2b7c642611} as the default key.
+[19:55:09:538 DBG ()] Key ring with default key {12740f0d-c8ec-493b-b880-bd2b7c642611} was loaded during application startup.
+[19:55:09:569 DBG ()] Loaded hosting startup assembly DSRFlowerShop.API
+[19:55:09:570 DBG ()] Hosting started
+[19:55:10:336 DBG ()] Connection id "0HMHJH0JTEQ6R" accepted.
+[19:55:10:339 DBG ()] Connection id "0HMHJH0JTEQ6R" started.
+[19:55:10:375 INF (8d3db465-c998-46a8-87be-ab84aa24e070)] Request starting HTTP/1.1 GET http://localhost:20000/ - -
+[19:55:10:378 DBG (8d3db465-c998-46a8-87be-ab84aa24e070)] Wildcard detected, all requests with hosts will be allowed.
+[19:55:10:381 DBG (8d3db465-c998-46a8-87be-ab84aa24e070)] The request path / does not match a supported file type
+[19:55:10:400 DBG (8d3db465-c998-46a8-87be-ab84aa24e070)] The request path  does not match the path filter
+[19:55:10:426 DBG (8d3db465-c998-46a8-87be-ab84aa24e070)] 1 candidate(s) found for the request path '/'
+[19:55:10:426 DBG (8d3db465-c998-46a8-87be-ab84aa24e070)] Endpoint '/Index' with route pattern '' is valid for the request path '/'
+[19:55:10:427 DBG (8d3db465-c998-46a8-87be-ab84aa24e070)] Request matched endpoint '/Index'
+[19:55:10:702 DBG (8d3db465-c998-46a8-87be-ab84aa24e070)] AuthenticationScheme: Bearer was not authenticated.
+[19:55:10:704 INF (8d3db465-c998-46a8-87be-ab84aa24e070)] Executing endpoint '/Index'
+[19:55:10:715 INF (8d3db465-c998-46a8-87be-ab84aa24e070)] Route matched with {page = "/Index", action = "", controller = ""}. Executing page /Index
+[19:55:10:716 DBG (8d3db465-c998-46a8-87be-ab84aa24e070)] Execution plan of authorization filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.AutoValidateAntiforgeryTokenAuthorizationFilter"]
+[19:55:10:716 DBG (8d3db465-c998-46a8-87be-ab84aa24e070)] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+[19:55:10:717 DBG (8d3db465-c998-46a8-87be-ab84aa24e070)] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+[19:55:10:717 DBG (8d3db465-c998-46a8-87be-ab84aa24e070)] Execution plan of exception filters (in the following order): ["None"]
+[19:55:10:718 DBG (8d3db465-c998-46a8-87be-ab84aa24e070)] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+[19:55:10:720 DBG (8d3db465-c998-46a8-87be-ab84aa24e070)] Executing page model factory for page DSRFlowerShop.Pages.Pages_Index (DSRFlowerShop.API)
+[19:55:10:720 DBG (8d3db465-c998-46a8-87be-ab84aa24e070)] Executed page model factory for page DSRFlowerShop.Pages.Pages_Index (DSRFlowerShop.API)
+[19:55:10:726 INF (8d3db465-c998-46a8-87be-ab84aa24e070)] Executing handler method DSRFlowerShop.API.Pages.IndexModel.OnGet - ModelState is "Valid"
+[19:55:10:727 INF (8d3db465-c998-46a8-87be-ab84aa24e070)] Executed handler method OnGet, returned result .
+[19:55:10:730 INF (8d3db465-c998-46a8-87be-ab84aa24e070)] Executing an implicit handler method - ModelState is "Valid"
+[19:55:10:731 INF (8d3db465-c998-46a8-87be-ab84aa24e070)] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+[19:55:10:746 DBG (8d3db465-c998-46a8-87be-ab84aa24e070)] View lookup cache miss for view '_Layout' in controller 'null'.
+[19:55:10:812 INF (8d3db465-c998-46a8-87be-ab84aa24e070)] Executed page /Index in 90.2034ms
+[19:55:10:813 INF (8d3db465-c998-46a8-87be-ab84aa24e070)] Executed endpoint '/Index'
+[19:55:10:815 INF (8d3db465-c998-46a8-87be-ab84aa24e070)] HTTP GET / responded 200 in 412.1549 ms
+[19:55:10:816 DBG (8d3db465-c998-46a8-87be-ab84aa24e070)] Connection id "0HMHJH0JTEQ6R" completed keep alive response.
+[19:55:10:819 INF (8d3db465-c998-46a8-87be-ab84aa24e070)] Request finished HTTP/1.1 GET http://localhost:20000/ - - - 200 - text/html;+charset=utf-8 446.5562ms
+[19:55:10:890 DBG ()] Connection id "0HMHJH0JTEQ6S" accepted.
+[19:55:10:895 DBG ()] Connection id "0HMHJH0JTEQ6S" started.
+[19:55:10:895 INF (f070e4ce-843a-490a-a54e-f20020a4119e)] Request starting HTTP/1.1 GET http://localhost:20000/lib/bootstrap/dist/css/bootstrap.min.css - -
+[19:55:10:897 DBG ()] Connection id "0HMHJH0JTEQ6T" accepted.
+[19:55:10:898 INF (c5f9a9d5-910f-469c-9af2-f3667626e7d5)] Request starting HTTP/1.1 GET http://localhost:20000/css/site.css?v=ztjIC4db8jqf712vv-YuBgABZg86gkWq8YLB6QAu-o0 - -
+[19:55:10:898 DBG ()] Connection id "0HMHJH0JTEQ6T" started.
+[19:55:10:899 DBG ()] Connection id "0HMHJH0JTEQ6U" accepted.
+[19:55:10:899 INF (799bf2ec-4c29-484f-937f-bbe9f2dfc6cb)] Request starting HTTP/1.1 GET http://localhost:20000/lib/jquery/dist/jquery.min.js - -
+[19:55:10:901 DBG ()] Connection id "0HMHJH0JTEQ6U" started.
+[19:55:10:904 DBG ()] Connection id "0HMHJH0JTEQ6V" accepted.
+[19:55:10:904 INF (19c060d6-6e81-4f56-8d09-60e9f6ebb5ce)] Request starting HTTP/1.1 GET http://localhost:20000/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+[19:55:10:907 DBG ()] Connection id "0HMHJH0JTEQ6V" started.
+[19:55:10:909 INF (1dbaee04-c096-4194-a3c5-d2be79f13347)] Request starting HTTP/1.1 GET http://localhost:20000/js/site.js?v=7mkNbU1tgQL1bUeZe3j2R151hKLhLDKO4BBaR-iqCy0 - -
+[19:55:10:915 INF (1dbaee04-c096-4194-a3c5-d2be79f13347)] The file /js/site.js was not modified
+[19:55:10:915 INF (f070e4ce-843a-490a-a54e-f20020a4119e)] The file /lib/bootstrap/dist/css/bootstrap.min.css was not modified
+[19:55:10:915 INF (19c060d6-6e81-4f56-8d09-60e9f6ebb5ce)] The file /lib/bootstrap/dist/js/bootstrap.bundle.min.js was not modified
+[19:55:10:916 INF (799bf2ec-4c29-484f-937f-bbe9f2dfc6cb)] The file /lib/jquery/dist/jquery.min.js was not modified
+[19:55:10:916 INF (c5f9a9d5-910f-469c-9af2-f3667626e7d5)] The file /css/site.css was not modified
+[19:55:10:917 DBG (799bf2ec-4c29-484f-937f-bbe9f2dfc6cb)] Handled. Status code: 304 File: /lib/jquery/dist/jquery.min.js
+[19:55:10:917 DBG (1dbaee04-c096-4194-a3c5-d2be79f13347)] Handled. Status code: 304 File: /js/site.js
+[19:55:10:917 DBG (c5f9a9d5-910f-469c-9af2-f3667626e7d5)] Handled. Status code: 304 File: /css/site.css
+[19:55:10:917 DBG (19c060d6-6e81-4f56-8d09-60e9f6ebb5ce)] Handled. Status code: 304 File: /lib/bootstrap/dist/js/bootstrap.bundle.min.js
+[19:55:10:917 DBG (f070e4ce-843a-490a-a54e-f20020a4119e)] Handled. Status code: 304 File: /lib/bootstrap/dist/css/bootstrap.min.css
+[19:55:10:918 DBG (799bf2ec-4c29-484f-937f-bbe9f2dfc6cb)] Connection id "0HMHJH0JTEQ6T" completed keep alive response.
+[19:55:10:918 DBG (1dbaee04-c096-4194-a3c5-d2be79f13347)] Connection id "0HMHJH0JTEQ6V" completed keep alive response.
+[19:55:10:919 DBG (c5f9a9d5-910f-469c-9af2-f3667626e7d5)] Connection id "0HMHJH0JTEQ6S" completed keep alive response.
+[19:55:10:919 DBG (19c060d6-6e81-4f56-8d09-60e9f6ebb5ce)] Connection id "0HMHJH0JTEQ6U" completed keep alive response.
+[19:55:10:919 DBG (f070e4ce-843a-490a-a54e-f20020a4119e)] Connection id "0HMHJH0JTEQ6R" completed keep alive response.
+[19:55:10:920 INF (799bf2ec-4c29-484f-937f-bbe9f2dfc6cb)] Request finished HTTP/1.1 GET http://localhost:20000/lib/jquery/dist/jquery.min.js - - - 304 - application/javascript 20.7785ms
+[19:55:10:920 INF (1dbaee04-c096-4194-a3c5-d2be79f13347)] Request finished HTTP/1.1 GET http://localhost:20000/js/site.js?v=7mkNbU1tgQL1bUeZe3j2R151hKLhLDKO4BBaR-iqCy0 - - - 304 - application/javascript 11.0412ms
+[19:55:10:921 INF (c5f9a9d5-910f-469c-9af2-f3667626e7d5)] Request finished HTTP/1.1 GET http://localhost:20000/css/site.css?v=ztjIC4db8jqf712vv-YuBgABZg86gkWq8YLB6QAu-o0 - - - 304 - text/css 22.9788ms
+[19:55:10:921 INF (19c060d6-6e81-4f56-8d09-60e9f6ebb5ce)] Request finished HTTP/1.1 GET http://localhost:20000/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 304 - application/javascript 17.2299ms
+[19:55:10:922 INF (f070e4ce-843a-490a-a54e-f20020a4119e)] Request finished HTTP/1.1 GET http://localhost:20000/lib/bootstrap/dist/css/bootstrap.min.css - - - 304 - text/css 28.9429ms
+[19:55:10:949 INF (d88cd915-1e67-4c7c-bcf8-131aa08ce4ad)] Request starting HTTP/1.1 GET http://localhost:20000/img/back.png - -
+[19:55:10:952 INF (d88cd915-1e67-4c7c-bcf8-131aa08ce4ad)] The file /img/back.png was not modified
+[19:55:10:952 DBG (d88cd915-1e67-4c7c-bcf8-131aa08ce4ad)] Handled. Status code: 304 File: /img/back.png
+[19:55:10:953 DBG (d88cd915-1e67-4c7c-bcf8-131aa08ce4ad)] Connection id "0HMHJH0JTEQ6R" completed keep alive response.
+[19:55:10:953 INF (d88cd915-1e67-4c7c-bcf8-131aa08ce4ad)] Request finished HTTP/1.1 GET http://localhost:20000/img/back.png - - - 304 - image/png 4.6825ms
+[19:55:12:263 INF (2bd1d9a5-a6da-464e-8b5c-c0629a3a67d4)] Request starting HTTP/1.1 GET http://localhost:20000/api/index.html - -
+[19:55:12:265 DBG (2bd1d9a5-a6da-464e-8b5c-c0629a3a67d4)] The request path /api/index.html does not match an existing file
+[19:55:12:309 DBG (2bd1d9a5-a6da-464e-8b5c-c0629a3a67d4)] Connection id "0HMHJH0JTEQ6R" completed keep alive response.
+[19:55:12:310 INF (2bd1d9a5-a6da-464e-8b5c-c0629a3a67d4)] Request finished HTTP/1.1 GET http://localhost:20000/api/index.html - - - 200 - text/html;charset=utf-8 46.5081ms
+[19:55:12:468 INF (ae3e5310-1ef4-45c4-a41c-31d5ccb43fe1)] Request starting HTTP/1.1 GET http://localhost:20000/api/v1/api.yaml - -
+[19:55:12:469 DBG (ae3e5310-1ef4-45c4-a41c-31d5ccb43fe1)] The request path /api/v1/api.yaml does not match a supported file type
+[19:55:12:585 DBG (ae3e5310-1ef4-45c4-a41c-31d5ccb43fe1)] Connection id "0HMHJH0JTEQ6R" completed keep alive response.
+[19:55:12:586 INF (ae3e5310-1ef4-45c4-a41c-31d5ccb43fe1)] Request finished HTTP/1.1 GET http://localhost:20000/api/v1/api.yaml - - - 200 - text/yaml;charset=utf-8 117.1865ms
+[19:55:14:659 DBG ()] Connection id "0HMHJH0JTEQ6V" received FIN.
+[19:55:14:659 DBG ()] Connection id "0HMHJH0JTEQ6U" received FIN.
+[19:55:14:660 DBG ()] Connection id "0HMHJH0JTEQ6R" received FIN.
+[19:55:14:660 DBG ()] Connection id "0HMHJH0JTEQ6T" received FIN.
+[19:55:14:661 DBG ()] Connection id "0HMHJH0JTEQ6S" received FIN.
+[19:55:14:685 DBG ()] Connection id "0HMHJH0JTEQ6V" sending FIN because: "The client closed the connection."
+[19:55:14:685 DBG ()] Connection id "0HMHJH0JTEQ6U" sending FIN because: "The client closed the connection."
+[19:55:14:706 DBG ()] Connection id "0HMHJH0JTEQ6S" disconnecting.
+[19:55:14:706 DBG ()] Connection id "0HMHJH0JTEQ6R" disconnecting.
+[19:55:14:706 DBG ()] Connection id "0HMHJH0JTEQ6T" disconnecting.
+[19:55:14:750 DBG ()] Connection id "0HMHJH0JTEQ6S" sending FIN because: "The client closed the connection."
+[19:55:14:751 DBG ()] Connection id "0HMHJH0JTEQ6R" sending FIN because: "The client closed the connection."
+[19:55:14:751 DBG ()] Connection id "0HMHJH0JTEQ6T" sending FIN because: "The client closed the connection."
+[19:55:14:757 DBG ()] Connection id "0HMHJH0JTEQ6U" disconnecting.
+[19:55:14:757 DBG ()] Connection id "0HMHJH0JTEQ6V" disconnecting.
+[19:55:14:758 DBG ()] Connection id "0HMHJH0JTEQ6S" stopped.
+[19:55:14:758 DBG ()] Connection id "0HMHJH0JTEQ6R" stopped.
+[19:55:14:758 DBG ()] Connection id "0HMHJH0JTEQ6U" stopped.
+[19:55:14:758 DBG ()] Connection id "0HMHJH0JTEQ6T" stopped.
+[19:55:14:758 DBG ()] Connection id "0HMHJH0JTEQ6V" stopped.
+[19:55:32:395 DBG ()] Connection id "0HMHJH0JTEQ70" accepted.
+[19:55:32:396 DBG ()] Connection id "0HMHJH0JTEQ70" started.
+[19:55:32:397 INF (9861fabe-99f5-41d2-97fc-dbe412700bfa)] Request starting HTTP/1.1 POST http://localhost:20000/api/v1/Dealers application/json 47
+[19:55:32:398 DBG (9861fabe-99f5-41d2-97fc-dbe412700bfa)] POST requests are not supported
+[19:55:32:400 DBG (9861fabe-99f5-41d2-97fc-dbe412700bfa)] The request has an origin header: 'http://localhost:20000'.
+[19:55:32:400 INF (9861fabe-99f5-41d2-97fc-dbe412700bfa)] CORS policy execution successful.
+[19:55:32:402 DBG (9861fabe-99f5-41d2-97fc-dbe412700bfa)] POST requests are not supported
+[19:55:32:425 DBG (9861fabe-99f5-41d2-97fc-dbe412700bfa)] 2 candidate(s) found for the request path '/api/v1/Dealers'
+[19:55:32:427 DBG (9861fabe-99f5-41d2-97fc-dbe412700bfa)] Endpoint 'DSRFlowerShop.API.Controllers.Dealers.DealersController.UsingDealer (DSRFlowerShop.API)' with route pattern 'api/v{version:apiVersion}/Dealers' is valid for the request path '/api/v1/Dealers'
+[19:55:32:428 DBG (9861fabe-99f5-41d2-97fc-dbe412700bfa)] Endpoint 'DSRFlowerShop.API.Controllers.Dealers.DealersController.CreateDealer (DSRFlowerShop.API)' with route pattern 'api/v{version:apiVersion}/Dealers' is valid for the request path '/api/v1/Dealers'
+[19:55:32:434 ERR (9861fabe-99f5-41d2-97fc-dbe412700bfa)] HTTP POST /api/v1/Dealers responded 500 in 31.8372 ms
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+DSRFlowerShop.API.Controllers.Dealers.DealersController.UsingDealer (DSRFlowerShop.API)
+DSRFlowerShop.API.Controllers.Dealers.DealersController.CreateDealer (DSRFlowerShop.API)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.SelectAsync(HttpContext httpContext, CandidateSet candidateSet)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.SelectEndpointWithPoliciesAsync(HttpContext httpContext, IEndpointSelectorPolicy[] policies, CandidateSet candidateSet)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.<Invoke>g__AwaitMatch|8_1(EndpointRoutingMiddleware middleware, HttpContext httpContext, Task matchTask)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+[19:55:32:482 DBG (9861fabe-99f5-41d2-97fc-dbe412700bfa)] Connection id "0HMHJH0JTEQ70" completed keep alive response.
+[19:55:32:483 INF (9861fabe-99f5-41d2-97fc-dbe412700bfa)] Request finished HTTP/1.1 POST http://localhost:20000/api/v1/Dealers application/json 47 - 400 - application/json 85.1773ms
+[19:55:32:483 DBG ()] Connection id "0HMHJH0JTEQ70", Request id "0HMHJH0JTEQ70:00000002": started reading request body.
+[19:55:32:484 DBG ()] Connection id "0HMHJH0JTEQ70", Request id "0HMHJH0JTEQ70:00000002": done reading request body.
+[19:55:34:671 DBG ()] Connection id "0HMHJH0JTEQ70" received FIN.
+[19:55:34:672 DBG ()] Connection id "0HMHJH0JTEQ70" sending FIN because: "The client closed the connection."
+[19:55:34:673 DBG ()] Connection id "0HMHJH0JTEQ70" disconnecting.
+[19:55:34:674 DBG ()] Connection id "0HMHJH0JTEQ70" stopped.
+[19:56:35:308 INF ()] Stating up
+[19:56:35:403 DBG ()] Initializing Razor view compiler with compiled view: '/Pages/Index.cshtml'.
+[19:56:35:405 DBG ()] Initializing Razor view compiler with compiled view: '/Pages/_ViewImports.cshtml'.
+[19:56:35:406 DBG ()] Initializing Razor view compiler with compiled view: '/Pages/_ViewStart.cshtml'.
+[19:56:35:406 DBG ()] Initializing Razor view compiler with compiled view: '/Pages/Shared/_Layout.cshtml'.
+[19:56:35:486 DBG ()] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+[19:56:35:501 WRN ()] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed.
+[19:56:35:502 INF ()] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+[19:56:35:715 DBG ()] An 'IServiceProvider' was created for internal use by Entity Framework.
+[19:56:36:160 DBG ()] The index {'BouquetsId'} was not created on entity type 'BouquetFlower (Dictionary<string, object>)' as the properties are already covered by the index {'BouquetsId', 'FlowersId'}.
+[19:56:36:161 DBG ()] The index {'CategoriesId'} was not created on entity type 'CategoryFlower (Dictionary<string, object>)' as the properties are already covered by the index {'CategoriesId', 'FlowersId'}.
+[19:56:36:161 DBG ()] The index {'UserId'} was not created on entity type 'IdentityUserRole<Guid>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+[19:56:36:162 DBG ()] The index {'UserId'} was not created on entity type 'IdentityUserToken<Guid>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+[19:56:36:243 DBG ()] The property 'BouquetFlower (Dictionary<string, object>).BouquetsId' was created in shadow state because there are no eligible CLR members with a matching name.
+[19:56:36:243 DBG ()] The property 'BouquetFlower (Dictionary<string, object>).FlowersId' was created in shadow state because there are no eligible CLR members with a matching name.
+[19:56:36:244 DBG ()] The property 'CategoryFlower (Dictionary<string, object>).CategoriesId' was created in shadow state because there are no eligible CLR members with a matching name.
+[19:56:36:244 DBG ()] The property 'CategoryFlower (Dictionary<string, object>).FlowersId' was created in shadow state because there are no eligible CLR members with a matching name.
+[19:56:36:403 INF ()] Entity Framework Core 6.0.2 initialized 'MainDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.2' with options: CommandTimeout=600 
+[19:56:36:509 DBG ()] Migrating using database 'DSRFlowerShop' on server 'dsrflowershop_sqlserver'.
+[19:56:36:515 DBG ()] Opening connection to database 'DSRFlowerShop' on server 'dsrflowershop_sqlserver'.
+[19:56:36:916 DBG ()] Opened connection to database 'DSRFlowerShop' on server 'dsrflowershop_sqlserver'.
+[19:56:36:921 DBG ()] Creating DbCommand for 'ExecuteNonQuery'.
+[19:56:36:927 DBG ()] Created DbCommand for 'ExecuteNonQuery' (2ms).
+[19:56:36:936 DBG ()] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT 1
+[19:56:36:957 INF ()] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT 1
+[19:56:36:959 DBG ()] Closing connection to database 'DSRFlowerShop' on server 'dsrflowershop_sqlserver'.
+[19:56:36:963 DBG ()] Closed connection to database 'DSRFlowerShop' on server 'dsrflowershop_sqlserver'.
+[19:56:36:968 DBG ()] Creating DbCommand for 'ExecuteScalar'.
+[19:56:36:969 DBG ()] Created DbCommand for 'ExecuteScalar' (0ms).
+[19:56:36:969 DBG ()] Opening connection to database 'DSRFlowerShop' on server 'dsrflowershop_sqlserver'.
+[19:56:36:970 DBG ()] Opened connection to database 'DSRFlowerShop' on server 'dsrflowershop_sqlserver'.
+[19:56:36:971 DBG ()] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+[19:56:36:986 INF ()] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+[19:56:36:986 DBG ()] Closing connection to database 'DSRFlowerShop' on server 'dsrflowershop_sqlserver'.
+[19:56:36:987 DBG ()] Closed connection to database 'DSRFlowerShop' on server 'dsrflowershop_sqlserver'.
+[19:56:36:989 DBG ()] Opening connection to database 'DSRFlowerShop' on server 'dsrflowershop_sqlserver'.
+[19:56:36:989 DBG ()] Opened connection to database 'DSRFlowerShop' on server 'dsrflowershop_sqlserver'.
+[19:56:36:990 DBG ()] Creating DbCommand for 'ExecuteNonQuery'.
+[19:56:36:990 DBG ()] Created DbCommand for 'ExecuteNonQuery' (0ms).
+[19:56:36:990 DBG ()] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT 1
+[19:56:36:992 INF ()] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT 1
+[19:56:36:993 DBG ()] Closing connection to database 'DSRFlowerShop' on server 'dsrflowershop_sqlserver'.
+[19:56:36:993 DBG ()] Closed connection to database 'DSRFlowerShop' on server 'dsrflowershop_sqlserver'.
+[19:56:36:994 DBG ()] Creating DbCommand for 'ExecuteScalar'.
+[19:56:36:994 DBG ()] Created DbCommand for 'ExecuteScalar' (0ms).
+[19:56:36:995 DBG ()] Opening connection to database 'DSRFlowerShop' on server 'dsrflowershop_sqlserver'.
+[19:56:36:995 DBG ()] Opened connection to database 'DSRFlowerShop' on server 'dsrflowershop_sqlserver'.
+[19:56:36:995 DBG ()] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+[19:56:36:997 INF ()] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+[19:56:36:997 DBG ()] Closing connection to database 'DSRFlowerShop' on server 'dsrflowershop_sqlserver'.
+[19:56:36:997 DBG ()] Closed connection to database 'DSRFlowerShop' on server 'dsrflowershop_sqlserver'.
+[19:56:37:007 DBG ()] Creating DbCommand for 'ExecuteReader'.
+[19:56:37:008 DBG ()] Created DbCommand for 'ExecuteReader' (0ms).
+[19:56:37:008 DBG ()] Opening connection to database 'DSRFlowerShop' on server 'dsrflowershop_sqlserver'.
+[19:56:37:009 DBG ()] Opened connection to database 'DSRFlowerShop' on server 'dsrflowershop_sqlserver'.
+[19:56:37:010 DBG ()] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+[19:56:37:013 INF ()] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+[19:56:37:015 DBG ()] A data reader was disposed.
+[19:56:37:015 DBG ()] Closing connection to database 'DSRFlowerShop' on server 'dsrflowershop_sqlserver'.
+[19:56:37:016 DBG ()] Closed connection to database 'DSRFlowerShop' on server 'dsrflowershop_sqlserver'.
+[19:56:37:023 DBG ()] No migrations were found in assembly 'DSRFlowerShop.Db.Context'.
+[19:56:37:025 INF ()] No migrations were applied. The database is already up to date.
+[19:56:37:027 DBG ()] 'MainDbContext' disposed.
+[19:56:37:031 DBG ()] Hosting starting
+[19:56:37:039 DBG ()] Reading data from file '/root/.aspnet/DataProtection-Keys/key-12740f0d-c8ec-493b-b880-bd2b7c642611.xml'.
+[19:56:37:046 DBG ()] Found key {12740f0d-c8ec-493b-b880-bd2b7c642611}.
+[19:56:37:055 DBG ()] Considering key {12740f0d-c8ec-493b-b880-bd2b7c642611} with expiration date 2022-08-09 19:55:09Z as default key.
+[19:56:37:057 DBG ()] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+[19:56:37:059 DBG ()] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+[19:56:37:059 DBG ()] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+[19:56:37:064 DBG ()] Using key {12740f0d-c8ec-493b-b880-bd2b7c642611} as the default key.
+[19:56:37:065 DBG ()] Key ring with default key {12740f0d-c8ec-493b-b880-bd2b7c642611} was loaded during application startup.
+[19:56:37:093 DBG ()] Loaded hosting startup assembly DSRFlowerShop.API
+[19:56:37:094 DBG ()] Hosting started

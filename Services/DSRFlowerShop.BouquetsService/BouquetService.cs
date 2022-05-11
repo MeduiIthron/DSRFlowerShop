@@ -7,6 +7,7 @@ using DSRFlowerShop.Common.Validator;
 using DSRFlowerShop.Db.Context.Context;
 using DSRFlowerShop.Db.Entities;
 using DSRFlowerShop.API.Bouquets.Models;
+using DSRFlowerShop.API.Flowers.Models;
 
 public class BouquetService : IBouquetService
 {
@@ -93,5 +94,22 @@ public class BouquetService : IBouquetService
 
         context.Remove(Bouquet);
         context.SaveChanges();
+    }
+
+    public async Task<BouquetModel> AddFlower(BouquetModel model, BouquetFlowerModel flower) {
+        using var context = await contextFactory.CreateDbContextAsync();
+
+        var Bouquet = await context.Bouquets.FirstOrDefaultAsync(x => x.Id.Equals(model.Id) && x.DealerID.Equals(model.DealerID));
+        ProcessException.ThrowIf(() => Bouquet is null, $"The Bouquet (id: {model.Id}) was not found");
+        Bouquet = mapper.Map(model, Bouquet);
+
+        var Flower = await context.Flowers.Select(x => x).FirstOrDefaultAsync(x => x.Id.Equals(flower.Id) && x.DealerID.Equals(flower.DealerID));
+        
+        ProcessException.ThrowIf(() => Flower is null, $"The Flower (id: {flower.Id}) was not found");
+        Bouquet.Flowers.Add(Flower);
+        context.Bouquets.Update(Bouquet);
+        context.SaveChanges();
+        
+        return mapper.Map<BouquetModel>(Bouquet);
     }
 }

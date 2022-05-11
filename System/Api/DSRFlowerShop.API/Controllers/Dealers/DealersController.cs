@@ -34,7 +34,7 @@ public class DealersController: ControllerBase
         return response;
     }
 
-    [HttpPost("")]
+    [HttpPut("")]
     [Authorize(AppScopes.FlowersWrite)]
     public async Task<DealerResponse> UsingDealer([FromBody] UsingDealerRequest request)
     {

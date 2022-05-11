@@ -14,6 +14,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Data\DSRFlowerShop.Db.Context\DSRFlowerShop.Db.Context.csproj" />
     <ProjectReference Include="..\..\Shared\DSRFlowerShop.Common\DSRFlowerShop.Common.csproj" />
+    <ProjectReference Include="..\DSRFlowerShop.FlowersService\DSRFlowerShop.FlowerService.csproj" />
   </ItemGroup>
 
 </Project>

@@ -7,6 +7,8 @@ using DSRFlowerShop.Common.Security;
 using DSRFlowerShop.BouquetService;
 using DSRFlowerShop.API.Bouquets.Models;
 using DSRFlowerShop.API.Controllers.Bouquets.Models;
+using DSRFlowerShop.API.Controllers.Flowers.Models;
+using DSRFlowerShop.API.Flowers.Models;
 
 [Route("api/v{version:apiVersion}/Bouquets")]
 [ApiController]
@@ -46,10 +48,23 @@ public class BouquetsController : ControllerBase
 
     [HttpPost("")]
     [Authorize(AppScopes.FlowersWrite)]
-    public async Task<BouquetResponse> AddBouquet(AddBouquetRequest request)
+    public async Task<BouquetResponse> AddBouquet([FromRoute] AddBouquetRequest request)
     {
         var model = mapper.Map<AddBouquetModel>(request);
         var Bouquet = await BouquetService.AddBouquet(model);
+        var response = mapper.Map<BouquetResponse>(Bouquet);
+
+        return response;
+    }
+
+    
+    [HttpPost("")]
+    [Authorize(AppScopes.FlowersWrite)]
+    public async Task<BouquetResponse> AddFlower([FromRoute] AddBouquetFlowerRequest request)
+    {
+        var bq = mapper.Map<BouquetModel>(request.bouquet);
+        var fl = mapper.Map<BouquetFlowerModel>(request.flower);
+        var Bouquet = await BouquetService.AddFlower(bq, fl);
         var response = mapper.Map<BouquetResponse>(Bouquet);
 
         return response;
