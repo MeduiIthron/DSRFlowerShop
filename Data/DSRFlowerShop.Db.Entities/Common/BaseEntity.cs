@@ -1,4 +1,4 @@
-﻿namespace DSRFlowerShop.Db.Entities;
+﻿namespace DSRFlowerShop.Db.Entities.Common;
 
 using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;

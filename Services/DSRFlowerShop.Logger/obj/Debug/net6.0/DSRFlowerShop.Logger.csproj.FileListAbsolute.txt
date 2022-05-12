@@ -1,0 +1,12 @@
+C:\Storage\Project\CourseProject\DSRFlowerShop\Services\DSRFlowerShop.Logger\bin\Debug\net6.0\DSRFlowerShop.Logger.deps.json
+C:\Storage\Project\CourseProject\DSRFlowerShop\Services\DSRFlowerShop.Logger\bin\Debug\net6.0\DSRFlowerShop.Logger.dll
+C:\Storage\Project\CourseProject\DSRFlowerShop\Services\DSRFlowerShop.Logger\bin\Debug\net6.0\DSRFlowerShop.Logger.pdb
+C:\Storage\Project\CourseProject\DSRFlowerShop\Services\DSRFlowerShop.Logger\obj\Debug\net6.0\DSRFlowerShop.Logger.csproj.AssemblyReference.cache
+C:\Storage\Project\CourseProject\DSRFlowerShop\Services\DSRFlowerShop.Logger\obj\Debug\net6.0\DSRFlowerShop.Logger.GeneratedMSBuildEditorConfig.editorconfig
+C:\Storage\Project\CourseProject\DSRFlowerShop\Services\DSRFlowerShop.Logger\obj\Debug\net6.0\DSRFlowerShop.Logger.AssemblyInfoInputs.cache
+C:\Storage\Project\CourseProject\DSRFlowerShop\Services\DSRFlowerShop.Logger\obj\Debug\net6.0\DSRFlowerShop.Logger.AssemblyInfo.cs
+C:\Storage\Project\CourseProject\DSRFlowerShop\Services\DSRFlowerShop.Logger\obj\Debug\net6.0\DSRFlowerShop.Logger.csproj.CoreCompileInputs.cache
+C:\Storage\Project\CourseProject\DSRFlowerShop\Services\DSRFlowerShop.Logger\obj\Debug\net6.0\DSRFlowerShop.Logger.dll
+C:\Storage\Project\CourseProject\DSRFlowerShop\Services\DSRFlowerShop.Logger\obj\Debug\net6.0\refint\DSRFlowerShop.Logger.dll
+C:\Storage\Project\CourseProject\DSRFlowerShop\Services\DSRFlowerShop.Logger\obj\Debug\net6.0\DSRFlowerShop.Logger.pdb
+C:\Storage\Project\CourseProject\DSRFlowerShop\Services\DSRFlowerShop.Logger\obj\Debug\net6.0\ref\DSRFlowerShop.Logger.dll

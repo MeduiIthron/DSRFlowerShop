@@ -1,9 +1,10 @@
-﻿namespace DSRFlowerShop.API;
-
-using DSRFlowerShop.BouquetService;
+﻿using DSRFlowerShop.BouquetService;
 using DSRFlowerShop.DealerService;
 using DSRFlowerShop.FlowerService;
+using DSRFlowerShop.Logger;
 using DSRFlowerShop.Settings;
+
+namespace DSRFlowerShop.Api;
 
 public static class Bootstrapper
 {
@@ -11,8 +12,9 @@ public static class Bootstrapper
     {
         services
             .AddSettings()
-            .AddFlowerService()
+            .AddLogger()
             .AddDealerService()
-            .AddBouquetService();
+            .AddBouquetService()
+            .AddFlowerService();
     }
 }

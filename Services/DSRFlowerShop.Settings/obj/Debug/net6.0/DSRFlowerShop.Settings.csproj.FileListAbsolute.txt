@@ -1,0 +1,12 @@
+C:\Storage\Project\CourseProject\DSRFlowerShop\Services\DSRFlowerShop.Settings\bin\Debug\net6.0\DSRFlowerShop.Settings.deps.json
+C:\Storage\Project\CourseProject\DSRFlowerShop\Services\DSRFlowerShop.Settings\bin\Debug\net6.0\DSRFlowerShop.Settings.dll
+C:\Storage\Project\CourseProject\DSRFlowerShop\Services\DSRFlowerShop.Settings\bin\Debug\net6.0\DSRFlowerShop.Settings.pdb
+C:\Storage\Project\CourseProject\DSRFlowerShop\Services\DSRFlowerShop.Settings\obj\Debug\net6.0\DSRFlowerShop.Settings.csproj.AssemblyReference.cache
+C:\Storage\Project\CourseProject\DSRFlowerShop\Services\DSRFlowerShop.Settings\obj\Debug\net6.0\DSRFlowerShop.Settings.GeneratedMSBuildEditorConfig.editorconfig
+C:\Storage\Project\CourseProject\DSRFlowerShop\Services\DSRFlowerShop.Settings\obj\Debug\net6.0\DSRFlowerShop.Settings.AssemblyInfoInputs.cache
+C:\Storage\Project\CourseProject\DSRFlowerShop\Services\DSRFlowerShop.Settings\obj\Debug\net6.0\DSRFlowerShop.Settings.AssemblyInfo.cs
+C:\Storage\Project\CourseProject\DSRFlowerShop\Services\DSRFlowerShop.Settings\obj\Debug\net6.0\DSRFlowerShop.Settings.csproj.CoreCompileInputs.cache
+C:\Storage\Project\CourseProject\DSRFlowerShop\Services\DSRFlowerShop.Settings\obj\Debug\net6.0\DSRFlowerShop.Settings.dll
+C:\Storage\Project\CourseProject\DSRFlowerShop\Services\DSRFlowerShop.Settings\obj\Debug\net6.0\refint\DSRFlowerShop.Settings.dll
+C:\Storage\Project\CourseProject\DSRFlowerShop\Services\DSRFlowerShop.Settings\obj\Debug\net6.0\DSRFlowerShop.Settings.pdb
+C:\Storage\Project\CourseProject\DSRFlowerShop\Services\DSRFlowerShop.Settings\obj\Debug\net6.0\ref\DSRFlowerShop.Settings.dll

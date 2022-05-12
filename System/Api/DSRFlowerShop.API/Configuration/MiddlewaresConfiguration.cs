@@ -1,6 +1,6 @@
-﻿namespace DSRFlowerShop.API.Configuration;
+﻿namespace DSRFlowerShop.Api.Configuration;
 
-using DSRFlowerShop.API.Middlewares;
+using DSRFlowerShop.Api.Middlewares;
 
 public static class MiddlewaresConfiguration
 {

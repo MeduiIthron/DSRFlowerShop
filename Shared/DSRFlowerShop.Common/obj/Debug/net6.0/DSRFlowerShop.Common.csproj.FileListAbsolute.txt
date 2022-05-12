@@ -1,0 +1,12 @@
+C:\Storage\Project\CourseProject\DSRFlowerShop\Shared\DSRFlowerShop.Common\bin\Debug\net6.0\DSRFlowerShop.Common.deps.json
+C:\Storage\Project\CourseProject\DSRFlowerShop\Shared\DSRFlowerShop.Common\bin\Debug\net6.0\DSRFlowerShop.Common.dll
+C:\Storage\Project\CourseProject\DSRFlowerShop\Shared\DSRFlowerShop.Common\bin\Debug\net6.0\DSRFlowerShop.Common.pdb
+C:\Storage\Project\CourseProject\DSRFlowerShop\Shared\DSRFlowerShop.Common\obj\Debug\net6.0\DSRFlowerShop.Common.csproj.AssemblyReference.cache
+C:\Storage\Project\CourseProject\DSRFlowerShop\Shared\DSRFlowerShop.Common\obj\Debug\net6.0\DSRFlowerShop.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Storage\Project\CourseProject\DSRFlowerShop\Shared\DSRFlowerShop.Common\obj\Debug\net6.0\DSRFlowerShop.Common.AssemblyInfoInputs.cache
+C:\Storage\Project\CourseProject\DSRFlowerShop\Shared\DSRFlowerShop.Common\obj\Debug\net6.0\DSRFlowerShop.Common.AssemblyInfo.cs
+C:\Storage\Project\CourseProject\DSRFlowerShop\Shared\DSRFlowerShop.Common\obj\Debug\net6.0\DSRFlowerShop.Common.csproj.CoreCompileInputs.cache
+C:\Storage\Project\CourseProject\DSRFlowerShop\Shared\DSRFlowerShop.Common\obj\Debug\net6.0\DSRFlowerShop.Common.dll
+C:\Storage\Project\CourseProject\DSRFlowerShop\Shared\DSRFlowerShop.Common\obj\Debug\net6.0\refint\DSRFlowerShop.Common.dll
+C:\Storage\Project\CourseProject\DSRFlowerShop\Shared\DSRFlowerShop.Common\obj\Debug\net6.0\DSRFlowerShop.Common.pdb
+C:\Storage\Project\CourseProject\DSRFlowerShop\Shared\DSRFlowerShop.Common\obj\Debug\net6.0\ref\DSRFlowerShop.Common.dll

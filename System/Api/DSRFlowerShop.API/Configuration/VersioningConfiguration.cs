@@ -1,4 +1,4 @@
-﻿namespace DSRFlowerShop.API.Configuration;
+﻿namespace DSRFlowerShop.Api.Configuration;
 
 using Microsoft.AspNetCore.Mvc;
 

@@ -1,0 +1,32 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = DSRFlowerShop.API
+build_property.RootNamespace = DSRFlowerShop.API
+build_property.ProjectDir = c:\Storage\Project\DSR\DSRFlowerShop\System\Api\DSRFlowerShop.API\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = c:\Storage\Project\DSR\DSRFlowerShop\System\Api\DSRFlowerShop.API
+build_property._RazorSourceGeneratorDebug = 
+
+[c:/Storage/Project/DSR/DSRFlowerShop/System/Api/DSRFlowerShop.API/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Storage/Project/DSR/DSRFlowerShop/System/Api/DSRFlowerShop.API/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Storage/Project/DSR/DSRFlowerShop/System/Api/DSRFlowerShop.API/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Storage/Project/DSR/DSRFlowerShop/System/Api/DSRFlowerShop.API/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-lxkzlj0j81

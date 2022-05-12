@@ -1,7 +1,7 @@
 ﻿namespace DSRFlowerShop.Identity.Configuration;
 
 using DSRFlowerShop.Db.Context.Context;
-using DSRFlowerShop.Db.Entities;
+using DSRFlowerShop.Db.Entities.Common;
 using DSRFlowerShop.Identity.Configuration.IS4;
 using Microsoft.AspNetCore.Identity;
 

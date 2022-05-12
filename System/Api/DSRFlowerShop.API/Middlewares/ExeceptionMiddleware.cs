@@ -1,4 +1,4 @@
-﻿namespace DSRFlowerShop.API.Middlewares;
+﻿namespace DSRFlowerShop.Api.Middlewares;
 
 using DSRFlowerShop.Common.Exceptions;
 using DSRFlowerShop.Common.Extensions;

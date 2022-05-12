@@ -1,4 +1,4 @@
-﻿namespace DSRFlowerShop.API.Configuration;
+﻿namespace DSRFlowerShop.Api.Configuration;
 
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.Extensions.Diagnostics.HealthChecks;

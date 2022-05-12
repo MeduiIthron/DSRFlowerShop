@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "IDz2r3mgOjGVGJ+gWvMdr8N10MZFzfGst3ZsntWuY9QYYTUJn/d36cqNSMeZS0pNUek0r6UeuATxprvahtOO7w==",
+  "success": true,
+  "projectFilePath": "C:\\Storage\\Project\\CourseProject\\DSRFlowerShop\\Shared\\DSRFlowerShop.Common\\DSRFlowerShop.Common.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\meduiithron\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
+    "C:\\Users\\meduiithron\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
+    "C:\\Users\\meduiithron\\.nuget\\packages\\fluentvalidation\\10.3.6\\fluentvalidation.10.3.6.nupkg.sha512",
+    "C:\\Users\\meduiithron\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\meduiithron\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\meduiithron\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\meduiithron\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\meduiithron\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,36 @@
+services:
+  dsrflowershop.api:
+    build:
+      context: C:\Storage\Project\CourseProject\DSRFlowerShop
+      dockerfile: System/Api/DSRFlowerShop.Api/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: DSRFlowerShop.Api
+      target: base
+    container_name: DSRFlowerShop.Api
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: /root/.nuget/fallbackpackages
+    image: dsrflowershopapi:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages
+        --additionalProbingPath /root/.nuget/fallbackpackages  "/app/bin/Debug/net6.0/DSRFlowerShop.Api.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - target: 80
+    tty: true
+    volumes:
+    - C:\Storage\Project\CourseProject\DSRFlowerShop\System\Api\DSRFlowerShop.Api:/app:rw
+    - C:\Users\meduiithron\vsdbg\vs2017u5:/remote_debugger:rw
+    - C:\Users\meduiithron\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\meduiithron\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+    - C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages:/root/.nuget/fallbackpackages:ro
+    - C:\Users\meduiithron\.nuget\packages:/root/.nuget/packages:ro
+    - C:\Storage\Project\CourseProject\DSRFlowerShop:/src:rw
+version: '3.4'

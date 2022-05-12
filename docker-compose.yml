@@ -1,33 +1,32 @@
 version: '3.4'
 
 services:
-    dsrflowershop_sqlserver:
-        image: mcr.microsoft.com/mssql/server:2019-latest
+  dsrflowershop_sqlserver:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    
+  dsrflowershop_redis:
+    image: redis
+    
+  dsrflowershop_rabbitmq:
+    image: rabbitmq:3-management
+    
+  dsrflowershop_api:
+    image: ${DOCKER_REGISTRY-}dsrflowershopapi
+    build:
+      context: .
+      dockerfile: System/Api/DSRFlowerShop.API/Dockerfile
+    depends_on:
+      - dsrflowershop_sqlserver
+      - dsrflowershop_redis
+      - dsrflowershop_rabbitmq
 
-    dsrflowershop_redis:
-        image: redis
-
-    dsrflowershop_rabbitmq:
-        image: rabbitmq:3-management
-
-    dsrflowershop_api:
-        image: ${DOCKER_REGISTRY-}dsrflowershopapi
-        build:
-            context: .
-            dockerfile: System/Api/DSRFlowerShop.API/Dockerfile
-        depends_on:
-            - dsrflowershop_sqlserver
-            - dsrflowershop_redis
-            - dsrflowershop_rabbitmq
-
-    dsrflowershop_identity:
-        image: ${DOCKER_REGISTRY-}dsrflowershopidentity
-        build:
-            context: .
-            dockerfile: System/Identity/DSRFlowerShop.Identity/Dockerfile
-        depends_on:
-            - dsrflowershop_sqlserver
-            - dsrflowershop_redis
-            - dsrflowershop_rabbitmq
-
+  dsrflowershop_identity:
+    image: ${DOCKER_REGISTRY-}dsrflowershopidentity
+    build:
+      context: .
+      dockerfile: System/Identity/DSRFlowerShop.Identity/Dockerfile
+    depends_on:
+      - dsrflowershop_sqlserver
+      - dsrflowershop_redis
+      - dsrflowershop_rabbitmq
 

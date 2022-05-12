@@ -5,11 +5,12 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
-    <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
+    <DockerComposeProjectPath>..\..\..\docker-compose.dcproj</DockerComposeProjectPath>
     <DockerfileContext>..\..\..</DockerfileContext>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.14.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.0.0" />
@@ -24,20 +25,20 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Data\DSRFlowerShop.Db.Context\DSRFlowerShop.Db.Context.csproj" />
-    <ProjectReference Include="..\..\..\Data\DSRFlowerShop.Db.Entities\DSRFlowerShop.Db.Entities.csproj" />
-    <ProjectReference Include="..\..\..\Services\DSRFlowerShop.BouquetsService\DSRFlowerShop.BouquetsService.csproj" />
-    <ProjectReference Include="..\..\..\Services\DSRFlowerShop.FlowersService\DSRFlowerShop.FlowerService.csproj" />
-    <ProjectReference Include="..\..\..\Services\DSRFlowerShop.Logger\DSRFlowerShop.Logger.csproj" />
-    <ProjectReference Include="..\..\..\Services\DSRFlowerShop.Settings\DSRFlowerShop.Settings.csproj" />
-    <ProjectReference Include="..\..\..\Services\DSRFlowerShop.DealersService\DSRFlowerShop.DealersService.csproj" />
-    <ProjectReference Include="..\..\..\Shared\DSRFlowerShop.Common\DSRFlowerShop.Common.csproj" />
+    <Folder Include="Controllers\FlowerList\Models" />
+    <Folder Include="logs" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="api.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+    <ProjectReference Include="..\..\..\Data\DSRFlowerShop.Db.Context\DSRFlowerShop.Db.Context.csproj" />
+    <ProjectReference Include="..\..\..\Data\DSRFlowerShop.Db.Entities\DSRFlowerShop.Db.Entities.csproj" />
+    <ProjectReference Include="..\..\..\Services\DSRFlowerShop.BouquetService\DSRFlowerShop.BouquetService.csproj" />
+    <ProjectReference Include="..\..\..\Services\DSRFlowerShop.DealerService\DSRFlowerShop.DealerService.csproj" />
+    <ProjectReference Include="..\..\..\Services\DSRFlowerShop.FlowerListService\DSRFlowerShop.FlowerListService.csproj" />
+    <ProjectReference Include="..\..\..\Services\DSRFlowerShop.FlowerService\DSRFlowerShop.FlowerService.csproj" />
+    <ProjectReference Include="..\..\..\Services\DSRFlowerShop.Logger\DSRFlowerShop.Logger.csproj" />
+    <ProjectReference Include="..\..\..\Services\DSRFlowerShop.Settings\DSRFlowerShop.Settings.csproj" />
+    <ProjectReference Include="..\..\..\Shared\DSRFlowerShop.Common\DSRFlowerShop.Common.csproj" />
   </ItemGroup>
 
 </Project>

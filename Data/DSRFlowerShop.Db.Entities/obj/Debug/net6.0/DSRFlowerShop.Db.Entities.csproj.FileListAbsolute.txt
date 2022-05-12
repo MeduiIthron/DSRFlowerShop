@@ -1,0 +1,12 @@
+C:\Storage\Project\CourseProject\DSRFlowerShop\Data\DSRFlowerShop.Db.Entities\bin\Debug\net6.0\DSRFlowerShop.Db.Entities.deps.json
+C:\Storage\Project\CourseProject\DSRFlowerShop\Data\DSRFlowerShop.Db.Entities\bin\Debug\net6.0\DSRFlowerShop.Db.Entities.dll
+C:\Storage\Project\CourseProject\DSRFlowerShop\Data\DSRFlowerShop.Db.Entities\bin\Debug\net6.0\DSRFlowerShop.Db.Entities.pdb
+C:\Storage\Project\CourseProject\DSRFlowerShop\Data\DSRFlowerShop.Db.Entities\obj\Debug\net6.0\DSRFlowerShop.Db.Entities.csproj.AssemblyReference.cache
+C:\Storage\Project\CourseProject\DSRFlowerShop\Data\DSRFlowerShop.Db.Entities\obj\Debug\net6.0\DSRFlowerShop.Db.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Storage\Project\CourseProject\DSRFlowerShop\Data\DSRFlowerShop.Db.Entities\obj\Debug\net6.0\DSRFlowerShop.Db.Entities.AssemblyInfoInputs.cache
+C:\Storage\Project\CourseProject\DSRFlowerShop\Data\DSRFlowerShop.Db.Entities\obj\Debug\net6.0\DSRFlowerShop.Db.Entities.AssemblyInfo.cs
+C:\Storage\Project\CourseProject\DSRFlowerShop\Data\DSRFlowerShop.Db.Entities\obj\Debug\net6.0\DSRFlowerShop.Db.Entities.csproj.CoreCompileInputs.cache
+C:\Storage\Project\CourseProject\DSRFlowerShop\Data\DSRFlowerShop.Db.Entities\obj\Debug\net6.0\DSRFlowerShop.Db.Entities.dll
+C:\Storage\Project\CourseProject\DSRFlowerShop\Data\DSRFlowerShop.Db.Entities\obj\Debug\net6.0\refint\DSRFlowerShop.Db.Entities.dll
+C:\Storage\Project\CourseProject\DSRFlowerShop\Data\DSRFlowerShop.Db.Entities\obj\Debug\net6.0\DSRFlowerShop.Db.Entities.pdb
+C:\Storage\Project\CourseProject\DSRFlowerShop\Data\DSRFlowerShop.Db.Entities\obj\Debug\net6.0\ref\DSRFlowerShop.Db.Entities.dll

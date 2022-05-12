@@ -6,24 +6,25 @@ EXPOSE 80
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY ["System/Api/DSRFlowerShop.API/DSRFlowerShop.API.csproj", "System/Api/DSRFlowerShop.API/"]
+COPY ["System/Api/DSRFlowerShop.Api/DSRFlowerShop.Api.csproj", "System/Api/DSRFlowerShop.Api/"]
+COPY ["Services/DSRFlowerShop.BouquetService/DSRFlowerShop.BouquetService.csproj", "Services/DSRFlowerShop.BouquetService/"]
+COPY ["Services/DSRFlowerShop.FlowerService/DSRFlowerShop.FlowerService.csproj", "Services/DSRFlowerShop.FlowerService/"]
 COPY ["Services/DSRFlowerShop.Logger/DSRFlowerShop.Logger.csproj", "Services/DSRFlowerShop.Logger/"]
-COPY ["Services/DSRFlowerShop.FlowersService/DSRFlowerShop.FlowerService.csproj", "Services/DSRFlowerShop.FlowersService/"]
+COPY ["Services/DSRFlowerShop.Settings/DSRFlowerShop.Settings.csproj", "Services/DSRFlowerShop.Settings/"]
 COPY ["Data/DSRFlowerShop.Db.Context/DSRFlowerShop.Db.Context.csproj", "Data/DSRFlowerShop.Db.Context/"]
 COPY ["Data/DSRFlowerShop.Db.Entities/DSRFlowerShop.Db.Entities.csproj", "Data/DSRFlowerShop.Db.Entities/"]
+COPY ["Services/DSRFlowerShop.FlowerListService/DSRFlowerShop.FlowerListService.csproj", "Services/DSRFlowerShop.FlowerListService/"]
+COPY ["Services/DSRFlowerShop.DealerService/DSRFlowerShop.DealerService.csproj", "Services/DSRFlowerShop.DealerService/"]
 COPY ["Shared/DSRFlowerShop.Common/DSRFlowerShop.Common.csproj", "Shared/DSRFlowerShop.Common/"]
-COPY ["Services/DSRFlowerShop.Settings/DSRFlowerShop.Settings.csproj", "Services/DSRFlowerShop.Settings/"]
-COPY ["Services/DSRFlowerShop.DealersService/DSRFlowerShop.DealersService.csproj", "Services/DSRFlowerShop.DealersService/"]
-COPY ["Services/DSRFlowerShop.BouquetsService/DSRFlowerShop.BouquetsService.csproj", "Services/DSRFlowerShop.BouquetsService/"]
-RUN dotnet restore "System/Api/DSRFlowerShop.API/DSRFlowerShop.API.csproj"
+RUN dotnet restore "System/Api/DSRFlowerShop.Api/DSRFlowerShop.Api.csproj"
 COPY . .
-WORKDIR "/src/System/Api/DSRFlowerShop.API"
-RUN dotnet build "DSRFlowerShop.API.csproj" -c Release -o /app/build
+WORKDIR "/src/System/Api/DSRFlowerShop.Api"
+RUN dotnet build "DSRFlowerShop.Api.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "DSRFlowerShop.API.csproj" -c Release -o /app/publish
+RUN dotnet publish "DSRFlowerShop.Api.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "DSRFlowerShop.API.dll"]
+ENTRYPOINT ["dotnet", "DSRFlowerShop.Api.dll"]

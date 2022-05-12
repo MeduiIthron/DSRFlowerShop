@@ -1,0 +1,140 @@
+networks:
+  shared-dsrflowershop-net:
+    driver: bridge
+    name: DSRFlowerShop
+services:
+  dsrflowershop_api:
+    build:
+      context: C:\Storage\Project\CourseProject\DSRFlowerShop
+      dockerfile: System/Api/DSRFlowerShop.API/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: DSRFlowerShop.Api
+      target: base
+    container_name: DSRFlowerShop.Api_1
+    depends_on:
+      dsrflowershop_rabbitmq:
+        condition: service_started
+      dsrflowershop_redis:
+        condition: service_started
+      dsrflowershop_sqlserver:
+        condition: service_started
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      CONNECTION_STRING_DATABASE: DSRFlowerShop
+      CONNECTION_STRING_HOST: dsrflowershop_sqlserver
+      CONNECTION_STRING_PASSWORD: Passw0rd
+      CONNECTION_STRING_USER: sa
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      GENERAL_SWAGGER_VISIBLE: "true"
+      IDENTITY_SERVER_CLIENT_ID: swagger
+      IDENTITY_SERVER_CLIENT_SECRET: secret
+      IDENTITY_SERVER_URL: http://host.docker.internal:20001
+      NUGET_FALLBACK_PACKAGES: /root/.nuget/fallbackpackages
+    image: dsrflowershopapi:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages
+        --additionalProbingPath /root/.nuget/fallbackpackages  "/app/bin/Debug/net6.0/DSRFlowerShop.Api.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    networks:
+      shared-dsrflowershop-net: {}
+    ports:
+    - published: 20000
+      target: 80
+    tty: true
+    volumes:
+    - C:\Storage\Project\CourseProject\DSRFlowerShop\System\Api\DSRFlowerShop.API:/app:rw
+    - C:\Users\meduiithron\vsdbg\vs2017u5:/remote_debugger:rw
+    - C:\Users\meduiithron\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\meduiithron\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+    - C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages:/root/.nuget/fallbackpackages:ro
+    - C:\Users\meduiithron\.nuget\packages:/root/.nuget/packages:ro
+    - C:\Storage\Project\CourseProject\DSRFlowerShop:/src:rw
+  dsrflowershop_identity:
+    build:
+      context: C:\Storage\Project\CourseProject\DSRFlowerShop
+      dockerfile: System/Identity/DSRFlowerShop.Identity/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: DSRFlowerShop.Identity
+      target: base
+    container_name: DSRFlowerShop.Identity_2
+    depends_on:
+      dsrflowershop_rabbitmq:
+        condition: service_started
+      dsrflowershop_redis:
+        condition: service_started
+      dsrflowershop_sqlserver:
+        condition: service_started
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      CONNECTION_STRING_DATABASE: DSRFlowerShop
+      CONNECTION_STRING_HOST: dsrflowershop_sqlserver
+      CONNECTION_STRING_PASSWORD: Passw0rd
+      CONNECTION_STRING_USER: sa
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: /root/.nuget/fallbackpackages
+    image: dsrflowershopidentity:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages
+        --additionalProbingPath /root/.nuget/fallbackpackages  "/app/bin/Debug/net6.0/DSRFlowerShop.Identity.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    networks:
+      shared-dsrflowershop-net: {}
+    ports:
+    - published: 20001
+      target: 80
+    tty: true
+    volumes:
+    - C:\Storage\Project\CourseProject\DSRFlowerShop\System\Identity\DSRFlowerShop.Identity:/app:rw
+    - C:\Users\meduiithron\vsdbg\vs2017u5:/remote_debugger:rw
+    - C:\Users\meduiithron\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\meduiithron\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+    - C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages:/root/.nuget/fallbackpackages:ro
+    - C:\Users\meduiithron\.nuget\packages:/root/.nuget/packages:ro
+    - C:\Storage\Project\CourseProject\DSRFlowerShop:/src:rw
+  dsrflowershop_rabbitmq:
+    image: rabbitmq:3-management
+    networks:
+      shared-dsrflowershop-net: {}
+    ports:
+    - published: 25672
+      target: 5672
+    - published: 25673
+      target: 5673
+    - published: 35672
+      target: 15672
+    volumes:
+    - rabbitmq-data:/var/lib/rabbitmq/:rw
+  dsrflowershop_redis:
+    image: redis
+    networks:
+      shared-dsrflowershop-net: {}
+    ports:
+    - published: 26379
+      target: 6379
+  dsrflowershop_sqlserver:
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_PID: Express
+      SA_PASSWORD: Passw0rd
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    networks:
+      shared-dsrflowershop-net: {}
+    ports:
+    - published: 21433
+      target: 1433
+    volumes:
+    - sqlserver-data:/var/opt/mssql:rw
+version: '3.4'
+volumes:
+  rabbitmq-data: {}
+  sqlserver-data: {}

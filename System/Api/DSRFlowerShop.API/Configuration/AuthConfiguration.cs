@@ -1,8 +1,9 @@
-﻿namespace DSRFlowerShop.API.Configuration;
+﻿using DSRFlowerShop.Db.Entities.Common;
+
+namespace DSRFlowerShop.Api.Configuration;
 
 using DSRFlowerShop.Common.Security;
 using DSRFlowerShop.Db.Context.Context;
-using DSRFlowerShop.Db.Entities;
 using DSRFlowerShop.Settings;
 using IdentityServer4.AccessTokenValidation;
 using Microsoft.AspNetCore.Identity;

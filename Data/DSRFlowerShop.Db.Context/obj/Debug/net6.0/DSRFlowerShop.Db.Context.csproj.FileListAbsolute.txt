@@ -1,0 +1,17 @@
+C:\Storage\Project\CourseProject\DSRFlowerShop\Data\DSRFlowerShop.Db.Context\bin\Debug\net6.0\DSRFlowerShop.Db.Context.deps.json
+C:\Storage\Project\CourseProject\DSRFlowerShop\Data\DSRFlowerShop.Db.Context\bin\Debug\net6.0\DSRFlowerShop.Db.Context.runtimeconfig.json
+C:\Storage\Project\CourseProject\DSRFlowerShop\Data\DSRFlowerShop.Db.Context\bin\Debug\net6.0\DSRFlowerShop.Db.Context.dll
+C:\Storage\Project\CourseProject\DSRFlowerShop\Data\DSRFlowerShop.Db.Context\bin\Debug\net6.0\DSRFlowerShop.Db.Context.pdb
+C:\Storage\Project\CourseProject\DSRFlowerShop\Data\DSRFlowerShop.Db.Context\bin\Debug\net6.0\DSRFlowerShop.Db.Entities.dll
+C:\Storage\Project\CourseProject\DSRFlowerShop\Data\DSRFlowerShop.Db.Context\bin\Debug\net6.0\DSRFlowerShop.Db.Entities.pdb
+C:\Storage\Project\CourseProject\DSRFlowerShop\Data\DSRFlowerShop.Db.Context\obj\Debug\net6.0\DSRFlowerShop.Db.Context.csproj.AssemblyReference.cache
+C:\Storage\Project\CourseProject\DSRFlowerShop\Data\DSRFlowerShop.Db.Context\obj\Debug\net6.0\DSRFlowerShop.Db.Context.GeneratedMSBuildEditorConfig.editorconfig
+C:\Storage\Project\CourseProject\DSRFlowerShop\Data\DSRFlowerShop.Db.Context\obj\Debug\net6.0\DSRFlowerShop.Db.Context.AssemblyInfoInputs.cache
+C:\Storage\Project\CourseProject\DSRFlowerShop\Data\DSRFlowerShop.Db.Context\obj\Debug\net6.0\DSRFlowerShop.Db.Context.AssemblyInfo.cs
+C:\Storage\Project\CourseProject\DSRFlowerShop\Data\DSRFlowerShop.Db.Context\obj\Debug\net6.0\DSRFlowerShop.Db.Context.csproj.CoreCompileInputs.cache
+C:\Storage\Project\CourseProject\DSRFlowerShop\Data\DSRFlowerShop.Db.Context\obj\Debug\net6.0\DSRFlowerShop.Db.Context.csproj.CopyComplete
+C:\Storage\Project\CourseProject\DSRFlowerShop\Data\DSRFlowerShop.Db.Context\obj\Debug\net6.0\DSRFlowerShop.Db.Context.dll
+C:\Storage\Project\CourseProject\DSRFlowerShop\Data\DSRFlowerShop.Db.Context\obj\Debug\net6.0\refint\DSRFlowerShop.Db.Context.dll
+C:\Storage\Project\CourseProject\DSRFlowerShop\Data\DSRFlowerShop.Db.Context\obj\Debug\net6.0\DSRFlowerShop.Db.Context.pdb
+C:\Storage\Project\CourseProject\DSRFlowerShop\Data\DSRFlowerShop.Db.Context\obj\Debug\net6.0\DSRFlowerShop.Db.Context.genruntimeconfig.cache
+C:\Storage\Project\CourseProject\DSRFlowerShop\Data\DSRFlowerShop.Db.Context\obj\Debug\net6.0\ref\DSRFlowerShop.Db.Context.dll

@@ -1,7 +1,7 @@
-using Serilog;
+﻿using Serilog;
 using DSRFlowerShop.Settings;
-using DSRFlowerShop.API;
-using DSRFlowerShop.API.Configuration;
+using DSRFlowerShop.Api;
+using DSRFlowerShop.Api.Configuration;
 
 // Configure application
 var builder = WebApplication.CreateBuilder(args);
