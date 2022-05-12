@@ -20,9 +20,6 @@
     <setting file="file://$PROJECT_DIR$/Data/DSRFlowerShop.Db.Context/Context/MainDbContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Data/DSRFlowerShop.Db.Context/Setup/DbInit.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Services/DSRFlowerShop.Settings/Source/SettingsSource.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../DSR/DSRFlowerShop/Services/DSRFlowerShop.FlowersService/Models/FlowerModel.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../DSR/DSRFlowerShop/System/Api/DSRFlowerShop.API/Bootstrapper.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../DSR/DSRFlowerShop/System/Api/DSRFlowerShop.API/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Downloads/NetSchool2021-master/NetSchool2021-master/PracticeProject/Services/DSRNetSchool.BookService/Models/BookModel.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -160,7 +157,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1652301433487</updated>
-      <workItem from="1652301438139" duration="19200000" />
+      <workItem from="1652301438139" duration="20830000" />
     </task>
     <servers />
   </component>

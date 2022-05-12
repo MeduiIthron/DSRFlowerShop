@@ -41,11 +41,7 @@ public class BouquetService : IBouquetService
             Id = Model.Id,
             DealerID = Model.DealerID,
             Status = Model.Status,
-            Flowers = Model.Flowers.Select(x => new StoredFlower()
-            {
-                Flower = mapper.Map<FlowerModel>(x),
-                Count = Model.Counters.First(y => y.FlowerID.Equals(x.Id)).Count
-            })
+            Flowers = mapper.Map<IEnumerable<FlowerModel>>(Model.Flowers)
         };
 
         return data;
@@ -69,11 +65,7 @@ public class BouquetService : IBouquetService
             Id = Bouquet.Id,
             DealerID = Bouquet.DealerID,
             Status = Bouquet.Status,
-            Flowers = Bouquet.Flowers.Select(x => new StoredFlower()
-            {
-                Flower = mapper.Map<FlowerModel>(x),
-                Count = Bouquet.Counters.First(y => y.FlowerID.Equals(x.Id)).Count
-            })
+            Flowers = mapper.Map<IEnumerable<FlowerModel>>(Bouquet.Flowers)
         }).ToListAsync();
 
         return data;
@@ -99,20 +91,12 @@ public class BouquetService : IBouquetService
         var bouquet = mapper.Map<Bouquet>(operation);
         var flower = await context.Flowers.Select(x => x).FirstOrDefaultAsync(x => x.Id.Equals(operation.FlowerId) && x.DealerID.Equals(operation.DealerID));
 
-        if (!bouquet.Flowers.Contains(flower))
-        {
-            bouquet.Flowers.Add(flower);
-            context.Flowers.Update(flower);
-            context.Bouquets.Update(bouquet);
-            var counter = new FlowerCounter() {BouquetID = bouquet.Id, FlowerID = flower.Id};
-            bouquet.Counters.Add(counter);
-            context.Counters.Add(counter);
-        }
-
         var cnt = bouquet.Counters.First(x => x.FlowerID.Equals(flower.Id));
         cnt.Count += operation.Count;
+        
+        bouquet.Flowers.Add(flower);
+        context.Flowers.Update(flower);
         context.Bouquets.Update(bouquet);
-        context.Counters.Update(cnt);
         context.SaveChanges();
 
         return new BouquetModel()
@@ -120,11 +104,7 @@ public class BouquetService : IBouquetService
             Id = bouquet.Id,
             DealerID = bouquet.DealerID,
             Status = bouquet.Status,
-            Flowers = bouquet.Flowers.Select(x => new StoredFlower()
-            {
-                Flower = mapper.Map<FlowerModel>(x),
-                Count = bouquet.Counters.First(y => y.FlowerID.Equals(x.Id)).Count
-            })
+            Flowers = mapper.Map<IEnumerable<FlowerModel>>(bouquet.Flowers)
         };
     }
 }

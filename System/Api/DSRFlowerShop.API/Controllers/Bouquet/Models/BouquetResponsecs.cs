@@ -12,5 +12,5 @@ public class BouquetResponse
     public int DealerID { get; set; }
     public string Status { get; set; }
     public float FullPrice { get; set; }
-    public IEnumerable<CountedFlowerResponse> Flowers { get; set; }
+    public IEnumerable<FlowerResponse> Flowers { get; set; }
 }

@@ -37,8 +37,8 @@ public class BouquetsController: ControllerBase
             DealerID = Bouquet.DealerID,
             Id = Bouquet.Id,
             Status = Bouquet.Status,
-            Flowers = mapper.Map<IEnumerable<CountedFlowerResponse>>(Bouquet.Flowers),
-            FullPrice = Bouquet.Flowers.Sum(x => x.Count * x.Flower.Price)
+            Flowers = mapper.Map<IEnumerable<FlowerResponse>>(Bouquet.Flowers),
+            FullPrice = Bouquet.Flowers.Sum(x => x.Price)
         };
         return response;
     }
@@ -53,8 +53,8 @@ public class BouquetsController: ControllerBase
             DealerID = Bouquet.DealerID,
             Id = Bouquet.Id,
             Status = Bouquet.Status,
-            Flowers = mapper.Map<IEnumerable<CountedFlowerResponse>>(Bouquet.Flowers),
-            FullPrice = Bouquet.Flowers.Sum(x => x.Count * x.Flower.Price)
+            Flowers = mapper.Map<IEnumerable<FlowerResponse>>(Bouquet.Flowers),
+            FullPrice = Bouquet.Flowers.Sum(x => x.Price)
         });
 
         return response;
@@ -81,8 +81,8 @@ public class BouquetsController: ControllerBase
             DealerID = Bouquet.DealerID,
             Id = Bouquet.Id,
             Status = Bouquet.Status,
-            Flowers = mapper.Map<IEnumerable<CountedFlowerResponse>>(Bouquet.Flowers),
-            FullPrice = Bouquet.Flowers.Sum(x => x.Count * x.Flower.Price)
+            Flowers = mapper.Map<IEnumerable<FlowerResponse>>(Bouquet.Flowers),
+            FullPrice = Bouquet.Flowers.Sum(x => x.Price)
         };
         return response;
     }

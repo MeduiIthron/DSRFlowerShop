@@ -3685,11 +3685,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Storage\\Project\\DSR\\DSRFlowerShop\\Services\\DSRFlowerShop.Logger\\DSRFlowerShop.Logger.csproj",
+      "projectUniqueName": "C:\\Storage\\Project\\CourseProject\\DSRFlowerShop\\Services\\DSRFlowerShop.Logger\\DSRFlowerShop.Logger.csproj",
       "projectName": "DSRFlowerShop.Logger",
-      "projectPath": "C:\\Storage\\Project\\DSR\\DSRFlowerShop\\Services\\DSRFlowerShop.Logger\\DSRFlowerShop.Logger.csproj",
+      "projectPath": "C:\\Storage\\Project\\CourseProject\\DSRFlowerShop\\Services\\DSRFlowerShop.Logger\\DSRFlowerShop.Logger.csproj",
       "packagesPath": "C:\\Users\\meduiithron\\.nuget\\packages\\",
-      "outputPath": "C:\\Storage\\Project\\DSR\\DSRFlowerShop\\Services\\DSRFlowerShop.Logger\\obj\\",
+      "outputPath": "C:\\Storage\\Project\\CourseProject\\DSRFlowerShop\\Services\\DSRFlowerShop.Logger\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

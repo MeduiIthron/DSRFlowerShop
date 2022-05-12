@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Storage\\Project\\DSR\\DSRFlowerShop\\Data\\DSRFlowerShop.Db.Context\\DSRFlowerShop.Db.Context.csproj": {}
+    "C:\\Storage\\Project\\CourseProject\\DSRFlowerShop\\Data\\DSRFlowerShop.Db.Context\\DSRFlowerShop.Db.Context.csproj": {}
   },
   "projects": {
-    "C:\\Storage\\Project\\DSR\\DSRFlowerShop\\Data\\DSRFlowerShop.Db.Context\\DSRFlowerShop.Db.Context.csproj": {
+    "C:\\Storage\\Project\\CourseProject\\DSRFlowerShop\\Data\\DSRFlowerShop.Db.Context\\DSRFlowerShop.Db.Context.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Storage\\Project\\DSR\\DSRFlowerShop\\Data\\DSRFlowerShop.Db.Context\\DSRFlowerShop.Db.Context.csproj",
+        "projectUniqueName": "C:\\Storage\\Project\\CourseProject\\DSRFlowerShop\\Data\\DSRFlowerShop.Db.Context\\DSRFlowerShop.Db.Context.csproj",
         "projectName": "DSRFlowerShop.Db.Context",
-        "projectPath": "C:\\Storage\\Project\\DSR\\DSRFlowerShop\\Data\\DSRFlowerShop.Db.Context\\DSRFlowerShop.Db.Context.csproj",
+        "projectPath": "C:\\Storage\\Project\\CourseProject\\DSRFlowerShop\\Data\\DSRFlowerShop.Db.Context\\DSRFlowerShop.Db.Context.csproj",
         "packagesPath": "C:\\Users\\meduiithron\\.nuget\\packages\\",
-        "outputPath": "C:\\Storage\\Project\\DSR\\DSRFlowerShop\\Data\\DSRFlowerShop.Db.Context\\obj\\",
+        "outputPath": "C:\\Storage\\Project\\CourseProject\\DSRFlowerShop\\Data\\DSRFlowerShop.Db.Context\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Storage\\Project\\DSR\\DSRFlowerShop\\Data\\DSRFlowerShop.Db.Entities\\DSRFlowerShop.Db.Entities.csproj": {
-                "projectPath": "C:\\Storage\\Project\\DSR\\DSRFlowerShop\\Data\\DSRFlowerShop.Db.Entities\\DSRFlowerShop.Db.Entities.csproj"
+              "C:\\Storage\\Project\\CourseProject\\DSRFlowerShop\\Data\\DSRFlowerShop.Db.Entities\\DSRFlowerShop.Db.Entities.csproj": {
+                "projectPath": "C:\\Storage\\Project\\CourseProject\\DSRFlowerShop\\Data\\DSRFlowerShop.Db.Entities\\DSRFlowerShop.Db.Entities.csproj"
               }
             }
           }
@@ -100,14 +100,14 @@
         }
       }
     },
-    "C:\\Storage\\Project\\DSR\\DSRFlowerShop\\Data\\DSRFlowerShop.Db.Entities\\DSRFlowerShop.Db.Entities.csproj": {
+    "C:\\Storage\\Project\\CourseProject\\DSRFlowerShop\\Data\\DSRFlowerShop.Db.Entities\\DSRFlowerShop.Db.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Storage\\Project\\DSR\\DSRFlowerShop\\Data\\DSRFlowerShop.Db.Entities\\DSRFlowerShop.Db.Entities.csproj",
+        "projectUniqueName": "C:\\Storage\\Project\\CourseProject\\DSRFlowerShop\\Data\\DSRFlowerShop.Db.Entities\\DSRFlowerShop.Db.Entities.csproj",
         "projectName": "DSRFlowerShop.Db.Entities",
-        "projectPath": "C:\\Storage\\Project\\DSR\\DSRFlowerShop\\Data\\DSRFlowerShop.Db.Entities\\DSRFlowerShop.Db.Entities.csproj",
+        "projectPath": "C:\\Storage\\Project\\CourseProject\\DSRFlowerShop\\Data\\DSRFlowerShop.Db.Entities\\DSRFlowerShop.Db.Entities.csproj",
         "packagesPath": "C:\\Users\\meduiithron\\.nuget\\packages\\",
-        "outputPath": "C:\\Storage\\Project\\DSR\\DSRFlowerShop\\Data\\DSRFlowerShop.Db.Entities\\obj\\",
+        "outputPath": "C:\\Storage\\Project\\CourseProject\\DSRFlowerShop\\Data\\DSRFlowerShop.Db.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

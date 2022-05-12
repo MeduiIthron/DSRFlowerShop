@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dHu4mwrXlaqAL6bwNTZm5d8cLAellbQvRlQ88cwlH5Xryl28BD66k2+JSWZg/VBe0nvyy1f97sM1E/X5IHrREA==",
+  "dgSpecHash": "GEUVdHLQUDLWpDIqWumqF+AxY5wUrtFO2yqB9+VtQYUbFZvNG7hk3JldA4IdVSeS4uViRoj5rgCN9E0gEB7wYA==",
   "success": true,
-  "projectFilePath": "C:\\Storage\\Project\\DSR\\DSRFlowerShop\\Data\\DSRFlowerShop.Db.Context\\DSRFlowerShop.Db.Context.csproj",
+  "projectFilePath": "C:\\Storage\\Project\\CourseProject\\DSRFlowerShop\\Data\\DSRFlowerShop.Db.Context\\DSRFlowerShop.Db.Context.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\meduiithron\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\meduiithron\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.2\\microsoft.aspnetcore.cryptography.internal.6.0.2.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "h3EAArhwAhBhEnO72oi05z7krbUQOWM9BWiSI1Z8bkU7Ow9VItbbmxCEi6FWg4mOna39XDynRTAsYW9EZAdR6A==",
+  "dgSpecHash": "8TSCzhtx+jC/rP2bpxY4DZmQqubJTqTayrcorXA7XFG2xaQ8UXrym55KsxkB6XzNAwvW7F+HT5QHPzrx3q32QA==",
   "success": true,
-  "projectFilePath": "C:\\Storage\\Project\\DSR\\DSRFlowerShop\\Services\\DSRFlowerShop.Logger\\DSRFlowerShop.Logger.csproj",
+  "projectFilePath": "C:\\Storage\\Project\\CourseProject\\DSRFlowerShop\\Services\\DSRFlowerShop.Logger\\DSRFlowerShop.Logger.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\meduiithron\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",
     "C:\\Users\\meduiithron\\.nuget\\packages\\microsoft.dotnet.platformabstractions\\2.0.4\\microsoft.dotnet.platformabstractions.2.0.4.nupkg.sha512",

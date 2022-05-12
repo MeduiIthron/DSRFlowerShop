@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "U9dERTyyCCjV7iDxU86uE+BAvZgzT1a3VeXkhjkcx/byJruy9tQ4kexKzSZAAqK0M7XSuWXv5Pj2o0TxKO5GUw==",
+  "dgSpecHash": "IQbwBQWZoB3rwm2ksZdPw5bYerRJB2QNvltXNpQIosPcfVVY8N9fZPmLAog2pu32w0KyaYEvDkoglBxJycKaGA==",
   "success": true,
-  "projectFilePath": "C:\\Storage\\Project\\DSR\\DSRFlowerShop\\Data\\DSRFlowerShop.Db.Entities\\DSRFlowerShop.Db.Entities.csproj",
+  "projectFilePath": "C:\\Storage\\Project\\CourseProject\\DSRFlowerShop\\Data\\DSRFlowerShop.Db.Entities\\DSRFlowerShop.Db.Entities.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\meduiithron\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.1\\microsoft.aspnetcore.cryptography.internal.6.0.1.nupkg.sha512",
     "C:\\Users\\meduiithron\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\6.0.1\\microsoft.aspnetcore.cryptography.keyderivation.6.0.1.nupkg.sha512",

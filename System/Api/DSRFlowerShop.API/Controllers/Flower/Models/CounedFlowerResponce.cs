@@ -1,4 +1,4 @@
-﻿using DSRFlowerShop.BouquetService.Models;
+using DSRFlowerShop.BouquetService.Models;
 
 namespace DSRFlowerShop.Api.Controllers.Flower.Models;
 
@@ -14,6 +14,6 @@ public class CountedFlowerResponseProfile : Profile
 {
     public CountedFlowerResponseProfile()
     {
-        CreateMap<StoredFlower, CountedFlowerResponse>();
+        CreateMap<FlowerModel, CountedFlowerResponse>();
     }
 }
